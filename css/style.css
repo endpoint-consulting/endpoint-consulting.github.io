@@ -92,6 +92,34 @@ figure {
 	height: 25px;
 	padding-bottom: 3px;
 	font-weight: 400;
+	position: relative;
+}
+
+.main-header .main-menu li:after {
+	content: "";
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #f14328;
+	position: absolute;
+	bottom: 3px;
+	opacity: 0;
+	/*-webkit-transition: -webkit-opacity 0.4s,
+	                    -webkit-bottom 0.4s;
+	-moz-transition: -moz-opacity 0.4s,
+	                 -moz-bottom 0.4s;*/
+	transition: opacity 0.2s ease-out,
+	            bottom 0.2s ease-out;
+	/*bottom 0.4s*/
+}
+
+.main-header .main-menu li:hover:after {
+	content: "";
+	display: block;
+	width: 100%;
+	border-bottom: 3px solid #f14328;
+	position: absolute;
+	bottom: -3px;
+	opacity: 1;
 }
 
 .main-header .main-menu li.active {
@@ -306,6 +334,13 @@ figure {
 	background: rgba(255, 255, 255, .2);
 	color: #fff;
 	font-size: 14px;
+}
+
+.projects li img,
+.projects li figcaption {
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
 }
 
 .projects li:hover img {
@@ -606,9 +641,10 @@ figure {
 	display: block;
 	width: 190px;
 	height: 40px;
-	color: #afafaf;
+	color: #fff;
 	font-size: 20px;
 	font-weight: 400;
+	background: #f14328;
 }
 
 .contacts video {
