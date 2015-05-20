@@ -7,10 +7,6 @@ body {
 	opacity: .5;
 }*/
 
-body,html {
-	height: 100%;
-}
-
 body {
 	font-family: 'Neo Sans Std';
 	/*300 Light
@@ -18,6 +14,11 @@ body {
 	600 Medium
 	700 Bold
 	800 Ultra*/
+	/*#f14328;
+	FF8977
+	FF472A
+	7F453B
+	CC3922*/
 }
 
 /*------------------------------------*\
@@ -30,18 +31,33 @@ body {
 	position: relative;
 }
 
+.lead-phrase p {
+	font-size: 22px;
+	width: 840px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 80px 0;
+	line-height: 1.8;
+	color: #555;
+}
+
+.lead-phrase p .marked {
+	font-style: italic;
+	font-weight: 700;
+	color: #f14328;
+}
+
 /*------------------------------------*\
 	#HEADER
 \*------------------------------------*/
 
 .main-header {
-	position: absolute;
-	width: 1170px;
-	height: 100px;
-	margin-left: -585px;
+	/*position: absolute;*/
+	height: 86px;
 	left: 50%;
 	top: 0;
 	overflow: hidden;
+	z-index: 1;
 }
 
 .main-header .logo {
@@ -75,13 +91,13 @@ body {
 }
 
 .main-header .main-menu li.active {
-	border-bottom: 3px solid #ba473e;
+	border-bottom: 3px solid #f14328;
 	font-weight: 600;
 }
 
 .main-header .main-menu li a {
 	text-decoration: none;
-	color: #232525;
+	color: #555;
 }
 
 
@@ -89,54 +105,99 @@ body {
 	#CONTENT
 \*------------------------------------*/
 
+
 /*------------------------------------*\
 	#Slogan
 \*------------------------------------*/
 
 .slogan {
-	height: 100%;
-	background: url(../img/front-background.jpg);
+	/*background: url(../img/front-background.jpg);*/
 	background-size: cover;
 	overflow: hidden;
-	font-weight: 300;
+	position: relative;
+}
+.slogan:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/*background: rgba(0, 0, 0, .4);*/
+	z-index: 2;
+	/*background: rgba(255, 255, 255, .3);*/
 }
 
-.slogan h1 {
-	margin: 443px 0 0;
+.slogan .title-block {
+	margin: 140px 0;
 	padding: 63px 0;
+/*	background: rgba(255, 255, 255, .3);
+	background: rgba(0, 0, 0, .4);*/
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+.slogan .title-block h1 {
+	margin: 0;
 	font-size: 57px;
 	text-align: center;
-	background: rgba(0, 0, 0, .3);
 	font-weight: 700;
 	line-height: 1;
-	color: #ba3426;
+	color: #fff;
+	position: relative;
+	z-index: 3;
+}
+/*#f14328;
+	FF8977
+	FF472A
+	7F453B
+	CC3922*/
+
+.slogan .title-block .video-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+}
+.slogan .title-block .video-wrapper:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .13);
+	z-index: 2;
+	/*background: rgba(255, 255, 255, .3);*/
+}
+
+.slogan .title-block video {
+	-webkit-filter:blur(10px);
+	-ms-filter: blur(10px);
+	-o-filter: blur(10px);
+	filter:blur(10px);
 }
 
 .slogan h1 .marked {
-	color: #fff;
+	color: #f14328;
+	transform: translate(-50%, -50%);
 }
 
-/*------------------------------------*\
-	#Description
-\*------------------------------------*/
-
-.description {
-	height: 265px;
-}
-
-.description p {
-	font-size: 22px;
-	width: 840px;
-	margin: 0 auto;
-	text-align: center;
-	padding: 82px 0;
-	line-height: 1.8;
-}
-
-.description p .marked {
-	font-style: italic;
-	font-weight: 700;
-	color: #ba3426;
+.slogan video {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*-webkit-filter:blur(10px);
+	-ms-filter: blur(10px);
+	-o-filter: blur(10px);
+	filter:blur(10px);*/
 }
 
 /*------------------------------------*\
@@ -150,12 +211,12 @@ body {
 	position: relative;
 }
 
-.areas > .wrapper {
+.areas {
 	height: 775px;
 	background: url(../img/areas-background.jpg);
 }
 
-.areas > .wrapper:after {
+.areas:after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -168,7 +229,7 @@ body {
 .areas h2 {
 	text-align: center;
 	color: #fff;
-	background: #ba473e;
+	/*background: #f14328;*/
 	display: inline-block;
 	margin: 74px 0 0;
 	font-size: 28px;
@@ -199,7 +260,7 @@ body {
 .areas li h3 {
 	text-transform: uppercase;
 	font-size: 15px;
-	color: #ba3426;
+	color: #f14328;
 	margin-top: 27px;
 	font-weight: 700;
 	margin-bottom: 10px;
@@ -221,29 +282,6 @@ body {
 }
 
 /*------------------------------------*\
-	#Trust
-\*------------------------------------*/
-
-.trust {
-	height: 265px;
-}
-
-.trust p {
-	font-size: 22px;
-	width: 820px;
-	margin: 0 auto;
-	text-align: center;
-	padding: 70px 0;
-	line-height: 1.7;
-}
-
-.trust p .marked {
-	font-style: italic;
-	font-weight: 700;
-	color: #ba3426;
-}
-
-/*------------------------------------*\
 	#Projects
 \*------------------------------------*/
 
@@ -251,6 +289,7 @@ body {
 	overflow: hidden;
 	height: 603px;
 	position: relative;
+	background: #ddd;
 }
 
 .projects .projects-text-wrapper {
@@ -266,7 +305,7 @@ body {
 	margin-left: -93px;
 	margin-top: 40px;
 	z-index: 2;
-	background: #ba473e;
+	background: #f14328;
 }
 
 .projects .projects-text-wrapper h2 {
@@ -363,7 +402,7 @@ body {
 	font-weight: 300;
 	font-size: 14px;
 	color: white;
-	background: #ba473e;
+	background: #f14328;
 	border-radius: 3px;
 	margin: 0;
 	height: 161px;
@@ -379,7 +418,7 @@ body {
 	overflow: hidden;
 	width: 62px;
 	height: 62px;
-	border: 3px solid #ba473e;
+	border: 3px solid #f14328;
 }
 
 .testimonials .ava img {
@@ -488,25 +527,6 @@ body {
 }
 
 /*------------------------------------*\
-	#call to action
-\*------------------------------------*/
-
-.contacts .call-to-action {
-	font-size: 24px;
-	width: 582px;
-	margin: -4px auto;
-	text-align: center;
-	padding: 40px 0;
-	line-height: 1.8;
-}
-
-.contacts .call-to-action .marked {
-	font-style: italic;
-	font-weight: 700;
-	color: #ba3426;
-}
-
-/*------------------------------------*\
 	#user-form
 \*------------------------------------*/
 
@@ -565,7 +585,7 @@ body {
 	height: 65px;
 	color: #fff;
 	font-size: 24px;
-	background: #ba3426;
+	background: #f14328;
 	font-weight: 400;
 }
 
@@ -575,7 +595,7 @@ body {
 
 .main-footer {
 	overflow: hidden;
-	background: #ba3426;
+	background: #f14328;
 	height: 46px;
 	position: relative;
 }

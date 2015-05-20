@@ -10,17 +10,19 @@
 
 	<!-- HEADER -->
 	<header class="main-header">
-		<div class="logo"><img src="img/logo.png"></div>
-		<nav class="main-menu">
-			<ul>
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Who We Are</a></li>
-				<li><a href="#">Our Work</a></li>
-				<li><a href="#">Hire Us</a></li>
-				<li><a href="#">Careers</a></li>
-			</ul>
-		</nav>
+		<div class="wrapper">
+			<div class="logo"><img src="img/logo.png"></div>
+			<nav class="main-menu">
+				<ul>
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Who We Are</a></li>
+					<li><a href="#">Our Work</a></li>
+					<li><a href="#">Hire Us</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 
@@ -28,12 +30,22 @@
 
 		<!-- SLOGAN -->
 		<div class="slogan">
-			<h1>Your <span class="marked">1 touch point</span><br> for all things software</h1>
+			<div class="title-block">
+				<h1>Your <span class="marked">1 touch point</span><br> for all things software</h1>
+				<div class="video-wrapper">
+					<video autoplay loop id="bgvid">
+						<source src="video/team.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<video autoplay loop id="bgvid">
+				<source src="video/team.mp4" type="video/mp4">
+			</video>
 		</div>
 
 		<!-- DESCRIPTION -->
-		<div class="description">
-			<p>Endpoint consulting is a contract software development firm with a us headquarters and US based leadership team but with a global foot print of <span class="marked">developers</span> and <span class="marked">designers</span> geared towards getting you the best value for your projects.</p>
+		<div class="description lead-phrase">
+			<p>Endpoint consulting is a contract software development firm with a us headquarters<br> and US based leadership team but with a global foot print of <span class="marked">developers</span> <br>and <span class="marked">designers</span> geared towards getting you the best value for your projects.</p>
 		</div>
 
 		<!-- AREAS -->
@@ -82,7 +94,7 @@
 		</div>
 
 		<!-- TRUST -->
-		<div class="trust">
+		<div class="trust lead-phrase">
 			<p>Some of the biggest brands in the country trust us with their software and you should to. We've been in business for <span class="marked">20 years</span> and <span class="marked">90%</span> of our clients are repeat customers.</p>
 		</div>
 
@@ -130,10 +142,11 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="call-to-action lead-phrase">
+			<p>We thrive on building great applications and exceeding our clients expectations. <br><span class="marked">Hire us</span> and let us show you what we can do for you.</p>
+		</div>
 		<!-- CONTACTS -->
 		<div class="contacts">
-			<p class="call-to-action">We thrive on building great applications and exceeding our clients expectations. <br><span class="marked">Hire us</span> and let us show you what we can do for you.</p>
 			<form class="user-form">
 				<input type="text" placeholder="First Name" class="first-name">
 				<input type="text" placeholder="Last Name" class="last-name">
