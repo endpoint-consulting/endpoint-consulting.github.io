@@ -7,6 +7,10 @@ body {
 	opacity: .5;
 }*/
 
+body,html {
+	height: 100%;
+}
+
 body {
 	font-family: 'Neo Sans Std';
 	/*300 Light
@@ -16,13 +20,19 @@ body {
 	800 Ultra*/
 }
 
+/*------------------------------------*\
+	#COMMON
+\*------------------------------------*/
+
 .wrapper {
 	width: 1170px;
 	margin: 0 auto;
 	position: relative;
 }
 
-/* HEADER */
+/*------------------------------------*\
+	#HEADER
+\*------------------------------------*/
 
 .main-header {
 	position: absolute;
@@ -44,7 +54,9 @@ body {
 	width: 204px;
 }
 
-/* Menu */
+/*------------------------------------*\
+	#Menu
+\*------------------------------------*/
 
 .main-header .main-menu {
 	position: absolute;
@@ -73,12 +85,16 @@ body {
 }
 
 
-/* CONTENT */
+/*------------------------------------*\
+	#CONTENT
+\*------------------------------------*/
 
-/* Slogan */
+/*------------------------------------*\
+	#Slogan
+\*------------------------------------*/
 
 .slogan {
-	height: 787px;
+	height: 100%;
 	background: url(../img/front-background.jpg);
 	background-size: cover;
 	overflow: hidden;
@@ -100,7 +116,9 @@ body {
 	color: #fff;
 }
 
-/* Description */
+/*------------------------------------*\
+	#Description
+\*------------------------------------*/
 
 .description {
 	height: 265px;
@@ -121,7 +139,9 @@ body {
 	color: #ba3426;
 }
 
-/* Areas */
+/*------------------------------------*\
+	#Areas
+\*------------------------------------*/
 
 .areas {
 	overflow: hidden;
@@ -200,7 +220,9 @@ body {
 	font-weight: 300;
 }
 
-/* Trust */
+/*------------------------------------*\
+	#Trust
+\*------------------------------------*/
 
 .trust {
 	height: 265px;
@@ -221,7 +243,9 @@ body {
 	color: #ba3426;
 }
 
-/* Projects */
+/*------------------------------------*\
+	#Projects
+\*------------------------------------*/
 
 .projects {
 	overflow: hidden;
@@ -317,7 +341,9 @@ body {
 	height: 324px;
 }
 
-/* Testemonials */
+/*------------------------------------*\
+	#Testemonials
+\*------------------------------------*/
 
 .testimonials {
 	height: 400px;
@@ -384,7 +410,9 @@ body {
 	font-size: 14px;
 }
 
-/* first testimonials */
+/*------------------------------------*\
+	#first testimonials
+\*------------------------------------*/
 
 .testimonials .first-testimonial {
 	padding: 80px 85px 0 180px;
@@ -411,7 +439,9 @@ body {
 	padding-left: 10px;
 }
 
-/* second testimonials */
+/*------------------------------------*\
+	#second testimonials
+\*------------------------------------*/
 
 .testimonials .second-testimonial {
 	padding: 80px 178px 0 86px;
@@ -446,7 +476,9 @@ body {
 	margin-right: -3px;
 }
 
-/* Contacts */
+/*------------------------------------*\
+	#Contacts
+\*------------------------------------*/
 
 .contacts {
 	overflow: hidden;
@@ -455,7 +487,9 @@ body {
 	background-size: cover;
 }
 
-/* call to action */
+/*------------------------------------*\
+	#call to action
+\*------------------------------------*/
 
 .contacts .call-to-action {
 	font-size: 24px;
@@ -472,7 +506,9 @@ body {
 	color: #ba3426;
 }
 
-/* user-form */
+/*------------------------------------*\
+	#user-form
+\*------------------------------------*/
 
 .contacts .user-form {
 	height: 554px;
@@ -533,8 +569,9 @@ body {
 	font-weight: 400;
 }
 
-
-/* FOOTER */
+/*------------------------------------*\
+	#FOOTER
+\*------------------------------------*/
 
 .main-footer {
 	overflow: hidden;
