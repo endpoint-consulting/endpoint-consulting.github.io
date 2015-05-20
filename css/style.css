@@ -120,24 +120,10 @@ figure {
 	overflow: hidden;
 	position: relative;
 }
-.slogan:after {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	/*background: rgba(0, 0, 0, .4);*/
-	z-index: 2;
-	/*background: rgba(255, 255, 255, .3);*/
-}
 
 .slogan .title-block {
 	margin: 140px 0;
 	padding: 63px 0;
-/*	background: rgba(255, 255, 255, .3);
-	background: rgba(0, 0, 0, .4);*/
 	overflow: hidden;
 	position: relative;
 	z-index: 2;
@@ -153,11 +139,6 @@ figure {
 	position: relative;
 	z-index: 3;
 }
-/*#f14328;
-	FF8977
-	FF472A
-	7F453B
-	CC3922*/
 
 .slogan .title-block .video-wrapper {
 	position: absolute;
@@ -177,7 +158,6 @@ figure {
 	left: 0;
 	background: rgba(0, 0, 0, .13);
 	z-index: 2;
-	/*background: rgba(255, 255, 255, .3);*/
 }
 
 .slogan .title-block video {
@@ -198,10 +178,6 @@ figure {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/*-webkit-filter:blur(10px);
-	-ms-filter: blur(10px);
-	-o-filter: blur(10px);
-	filter:blur(10px);*/
 }
 
 /*------------------------------------*\
@@ -235,13 +211,14 @@ figure {
 	color: #fff;
 	/*background: #f14328;*/
 	display: inline-block;
-	margin: 74px 0 0;
+	margin: 100px 0 0;
 	font-size: 28px;
 	font-weight: 500;
 	padding: 12px 39px;
 	text-transform: uppercase;
 	position: relative;
 	z-index: 1;
+	color: #f14328;
 }
 
 .areas ul {
@@ -253,7 +230,7 @@ figure {
 .areas li {
 	display: inline-block;
 	vertical-align: top;
-	margin: 75px 100px 0;
+	margin: 75px 75px 0;
 	width: 310px;
 }
 
@@ -264,10 +241,11 @@ figure {
 .areas li h3 {
 	text-transform: uppercase;
 	font-size: 18px;
-	color: #f14328;
+	color: #fff;
 	margin-top: 27px;
 	font-weight: 700;
 	margin-bottom: 10px;
+	color: #f14328;
 }
 
 .areas li p {
@@ -323,10 +301,11 @@ figure {
 .projects li figcaption a {
 	margin-top: 7px;
 	display: inline-block;
-	padding: 5px 10px;
+	padding: 7px 14px;
 	text-decoration: none;
 	background: rgba(255, 255, 255, .2);
 	color: #fff;
+	font-size: 14px;
 }
 
 .projects li:hover img {
@@ -528,9 +507,9 @@ figure {
 
 .contacts {
 	overflow: hidden;
-	padding-bottom: 112px;
 	background: url(../img/contacts-background.jpg);
 	background-size: cover;
+	position: relative;
 }
 
 /*------------------------------------*\
@@ -538,18 +517,55 @@ figure {
 \*------------------------------------*/
 
 .contacts .user-form {
-	height: 554px;
-	width: 816px;
-	margin: 36px auto 0;
-	background: rgba(255, 255, 255, .3);
+	/*background: rgba(0, 0, 0, .3);*/
 	padding: 43px 69px;
 	box-sizing: border-box;
+	position: relative;
+	z-index: 2;
+}
+
+.contacts .form-wrapper {
+	overflow: hidden;
+	width: 816px;
+	margin: 100px auto 146px;
+	position: relative;
+}
+
+.contacts .form-wrapper .video-wrapper {
+	left:calc(-50vw + 408px);
+	width: 100vw;
+	position: absolute;
+	top: -100px;
+	bottom: -146px;
+	z-index: 1;
+}
+.contacts .form-wrapper .video-wrapper:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .20);
+	z-index: 2;
+}
+
+.contacts .form-wrapper video {
+	-webkit-filter:blur(10px);
+	-ms-filter: blur(10px);
+	-o-filter: blur(10px);
+	filter:blur(10px);
+}
+
+.contacts .user-form input,
+.contacts .user-form textarea {
+	background: rgba(0, 05, 0, .4);
 }
 
 .contacts .user-form input {
 	border: none;
 	height: 42px;
-	background: #444;
 	margin: 0 12px 35px;
 }
 
@@ -589,11 +605,18 @@ figure {
 	margin: 0 auto;
 	display: block;
 	width: 190px;
-	height: 65px;
-	color: #fff;
-	font-size: 24px;
-	background: #f14328;
+	height: 40px;
+	color: #afafaf;
+	font-size: 20px;
 	font-weight: 400;
+}
+
+.contacts video {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /*------------------------------------*\
@@ -602,16 +625,30 @@ figure {
 
 .main-footer {
 	overflow: hidden;
-	background: #f14328;
 	height: 46px;
 	position: relative;
+	margin-top: -46px;
+}
+
+.main-footer:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .20);
+	z-index: 2;
 }
 
 .main-footer ul {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	color: #232525;
+	color: #afafaf;
+	position: relative;
+	z-index: 2;
 }
 
 .main-footer li {
@@ -636,5 +673,17 @@ figure {
 	font-size: 14px;
 	top: 0;
 	line-height: 46px;
-	color: #89221d;
+	color: #afafaf;
+	z-index: 2;
+}
+
+.main-footer video {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	z-index: 1;
+	-webkit-filter:blur(10px);
+	-ms-filter: blur(10px);
+	-o-filter: blur(10px);
+	filter:blur(10px);
 }

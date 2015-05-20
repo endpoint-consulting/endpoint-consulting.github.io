@@ -175,7 +175,7 @@
 					<div class="author-block">
 						<div class="ava"><img src="img/testimonial-ava-right.jpg"></div>
 						<div class="author-text">
-							<div class="name">Name | Desingation</div>
+							<div class="name"><span class="name-text">Name</span> | Desingation</div>
 							<div class="company">Company</div>
 							<div class="place">Place</div>
 						</div>
@@ -188,15 +188,26 @@
 		</div>
 		<!-- CONTACTS -->
 		<div class="contacts">
-			<form class="user-form">
-				<input type="text" placeholder="First Name" class="first-name">
-				<input type="text" placeholder="Last Name" class="last-name">
-				<input type="text" placeholder="Email" class="email">
-				<input type="text" placeholder="Phone" class="phone">
-				<input type="text" placeholder="Subject" class="subject">
-				<textarea type="text" placeholder="Message" class="message"></textarea>
-				<input type="submit" value="Submit" class="submit">
-			</form>
+			<div class="form-wrapper">
+				<form class="user-form">
+					<input type="text" placeholder="First Name" class="first-name">
+					<input type="text" placeholder="Last Name" class="last-name">
+					<input type="text" placeholder="Email" class="email">
+					<input type="text" placeholder="Phone" class="phone">
+					<input type="text" placeholder="Subject" class="subject">
+					<textarea type="text" placeholder="Message" class="message"></textarea>
+					<input type="submit" value="Submit" class="submit">
+				</form>
+				<div class="video-wrapper">
+					<video autoplay loop id="bgvid">
+						<source src="video/town.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+
+			<video autoplay loop id="bgvid">
+				<source src="video/town.mp4" type="video/mp4">
+			</video>
 		</div>
 		
 	</main>
@@ -210,6 +221,9 @@
 			</ul>
 			<span class="designed-by">Website Design by</span>
 		</div>
+		<video autoplay loop id="bgvid">
+			<source src="video/town.mp4" type="video/mp4">
+		</video>
 	</footer>
 
 	<script src="js/jquery.js"></script>
