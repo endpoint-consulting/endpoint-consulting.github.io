@@ -8,7 +8,7 @@ body {
 }*/
 
 body {
-	font-family: 'Neo Sans Std';
+	font-family: 'NeoSansStd-Regular';
 	/*300 Light
 	400 Regular
 	600 Medium
@@ -43,11 +43,13 @@ figure {
 	padding: 80px 0;
 	line-height: 1.8;
 	color: #555;
+	font-family: 'NeoSansStd-Regular';
 }
 
 .lead-phrase p .marked {
 	font-style: italic;
-	font-weight: 700;
+	/*font-weight: 700;*/
+	font-family: 'NeoSansStd-Bold';
 	color: #f14328;
 }
 
@@ -95,6 +97,7 @@ figure {
 	padding-bottom: 3px;
 	font-weight: 400;
 	position: relative;
+	font-family: 'NeoSansStd-Regular';
 }
 
 .main-header .main-menu li:after {
@@ -126,7 +129,8 @@ figure {
 
 .main-header .main-menu li.active {
 	border-bottom: 3px solid #f14328;
-	font-weight: 600;
+	/*font-weight: 600;*/
+	font-family: 'NeoSansStd-Medium';
 }
 
 .main-header .main-menu li a {
@@ -161,7 +165,8 @@ figure {
 	color: #444;
 	position: relative;
 	z-index: 3;
-	font-weight: 500;
+	font-weight: normal;
+	font-family: 'NeoSansStd-Medium';
 	background: rgba(255, 255, 255, .4);
 }
 
@@ -238,7 +243,8 @@ figure {
 	display: inline-block;
 	margin: 100px 0 0;
 	font-size: 28px;
-	font-weight: 500;
+	/*font-weight: 500;*/
+	font-family: 'NeoSansStd-Medium';
 	padding: 12px 39px;
 	text-transform: uppercase;
 	position: relative;
@@ -268,7 +274,8 @@ figure {
 	font-size: 18px;
 	color: #fff;
 	margin-top: 27px;
-	font-weight: 700;
+	/*font-weight: 700;*/
+	font-family: 'NeoSansStd-Bold';
 	margin-bottom: 10px;
 	color: #f14328;
 }
@@ -277,7 +284,8 @@ figure {
 	font-size: 16px;
 	text-align: center;
 	color: white;
-	font-weight: 300;
+	/*font-weight: 300;*/
+	font-family: 'NeoSansStd-Light';
 }
 
 /*------------------------------------*\
@@ -314,6 +322,8 @@ figure {
 .projects li figcaption h3 {
 	margin: 0;
 	font-size: 18px;
+	font-weight: normal;
+	font-family: 'NeoSansStd-Bold';
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -416,8 +426,8 @@ figure {
 .testimonials .text {
 	box-sizing: border-box;
 	padding: 24px 18px;
-	font-style: italic;
-	font-weight: 300;
+	/*font-style: italic;*/
+	/*font-weight: 300;*/
 	font-size: 14px;
 	color: white;
 	background: #f14328;
@@ -425,6 +435,7 @@ figure {
 	margin: 0;
 	height: 161px;
 	position: relative;
+	font-family: 'NeoSansStd-LightItalic';
 }
 
 .testimonials .author-block {
@@ -594,6 +605,8 @@ figure {
 .contacts .user-form input,
 .contacts .user-form textarea {
 	background: rgba(255, 255, 255, .8);
+	font-family: 'NeoSansStd-Regular';
+	font-weight: normal;
 }
 
 .contacts .user-form input {
