@@ -157,11 +157,11 @@ figure {
 	padding: 63px 0;
 	font-size: 57px;
 	text-align: center;
-	font-weight: 700;
 	line-height: 1;
 	color: #444;
 	position: relative;
 	z-index: 3;
+	font-weight: 500;
 	background: rgba(255, 255, 255, .4);
 }
 
