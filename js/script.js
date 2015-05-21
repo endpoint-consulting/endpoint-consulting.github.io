@@ -21,20 +21,20 @@
 	];
 
 	sections[0].menuItem.on('click', function() {
-		console.log(0)
 		scrollToEl(sections[0].element);
+		setActive(sections[0].menuItem);
 	});
 	sections[1].menuItem.on('click', function() {
-		console.log(1)
 		scrollToEl(sections[1].element);
+		setActive(sections[1].menuItem);
 	});
 	sections[2].menuItem.on('click', function() {
-		console.log(2)
 		scrollToEl(sections[2].element);
+		setActive(sections[2].menuItem);
 	});
 	sections[3].menuItem.on('click', function() {
-		console.log(3)
 		scrollToEl(sections[3].element);
+		setActive(sections[3].menuItem);
 	});
 	
 
@@ -42,5 +42,10 @@
 		$('html, body').animate({
 			scrollTop: ($(element).first().offset().top - 66)
 		},500);
+	}
+
+	function setActive(element) {
+		$('.main-menu li').removeClass('active');
+		element.addClass('active');
 	}
 })();
