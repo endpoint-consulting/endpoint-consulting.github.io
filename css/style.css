@@ -56,17 +56,19 @@ figure {
 \*------------------------------------*/
 
 .main-header {
-	/*position: absolute;*/
-	height: 86px;
-	left: 50%;
+	position: fixed;
+	height: 66px;
+	left: 0;
 	top: 0;
+	right: 0;
 	overflow: hidden;
-	z-index: 1;
+	z-index: 4;
+	background: rgba(255, 255, 255, .4)
 }
 
 .main-header .logo {
 	position: absolute;
-	top: 20px;
+	top: 10px;
 	left: 21px;
 }
 
@@ -81,15 +83,15 @@ figure {
 .main-header .main-menu {
 	position: absolute;
 	right: 44px;
-	top: 12px;
-	font-size: 18px;
+	top: 6px;
+	font-size: 16px;
 }
 
 .main-header .main-menu li {
 	float: left;
 	margin: 0 19px;
 	display: block;
-	height: 25px;
+	height: 20px;
 	padding-bottom: 3px;
 	font-weight: 400;
 	position: relative;
@@ -112,7 +114,7 @@ figure {
 	/*bottom 0.4s*/
 }
 
-.main-header .main-menu li:hover:after {
+.main-header .main-menu li:not(.active):hover:after {
 	content: "";
 	display: block;
 	width: 100%;
@@ -143,6 +145,7 @@ figure {
 \*------------------------------------*/
 
 .slogan {
+	margin-top: 66px;
 	/*background: url(../img/front-background.jpg);*/
 	background-size: cover;
 	overflow: hidden;
