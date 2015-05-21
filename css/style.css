@@ -63,7 +63,7 @@ figure {
 	right: 0;
 	overflow: hidden;
 	z-index: 4;
-	background: rgba(255, 255, 255, .4)
+	background: rgba(255, 255, 255, .4);
 }
 
 .main-header .logo {
@@ -152,23 +152,17 @@ figure {
 	position: relative;
 }
 
-.slogan .title-block {
+.slogan h1 {
 	margin: 140px 0;
 	padding: 63px 0;
-	overflow: hidden;
-	position: relative;
-	z-index: 2;
-}
-
-.slogan .title-block h1 {
-	margin: 0;
 	font-size: 57px;
 	text-align: center;
 	font-weight: 700;
 	line-height: 1;
-	color: #fff;
+	color: #444;
 	position: relative;
 	z-index: 3;
+	background: rgba(255, 255, 255, .4);
 }
 
 .slogan .title-block .video-wrapper {
@@ -560,6 +554,7 @@ figure {
 	box-sizing: border-box;
 	position: relative;
 	z-index: 2;
+	background: rgba(255, 255, 255, .20);
 }
 
 .contacts .form-wrapper {
@@ -585,7 +580,7 @@ figure {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0, 0, 0, .20);
+	background: rgba(255, 255, 255, .20);
 	z-index: 2;
 }
 
@@ -598,7 +593,7 @@ figure {
 
 .contacts .user-form input,
 .contacts .user-form textarea {
-	background: rgba(0, 05, 0, .4);
+	background: rgba(255, 255, 255, .8);
 }
 
 .contacts .user-form input {
@@ -616,7 +611,29 @@ figure {
 	box-sizing: border-box;
 	padding: 12px 19px;
 	font-size: 20px;
-	color: #fff;
+	color: #000;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #444;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #444;
+	opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #444;
+	opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder { 
+	color: #444;
 }
 
 .contacts .first-name,
@@ -666,28 +683,20 @@ figure {
 	overflow: hidden;
 	height: 46px;
 	position: relative;
-	margin-top: -46px;
-}
-
-.main-footer:after {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, .20);
-	z-index: 2;
+	margin-top: -96px;
+	/*background: #666;*/
+	text-align: center;
 }
 
 .main-footer ul {
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	color: #afafaf;
+	color: #000;
 	position: relative;
 	z-index: 2;
+	background: rgba(255, 255, 255, .9);
 }
 
 .main-footer li {
@@ -704,25 +713,4 @@ figure {
 .main-footer li span {
 	vertical-align: middle;
 	font-size: 14px;
-}
-
-.main-footer .designed-by {
-	position: absolute;
-	right: 57px;
-	font-size: 14px;
-	top: 0;
-	line-height: 46px;
-	color: #afafaf;
-	z-index: 2;
-}
-
-.main-footer video {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	z-index: 1;
-	-webkit-filter:blur(10px);
-	-ms-filter: blur(10px);
-	-o-filter: blur(10px);
-	filter:blur(10px);
 }
