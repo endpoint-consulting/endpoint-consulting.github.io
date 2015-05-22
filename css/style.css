@@ -253,6 +253,16 @@ figure {
 	height: 100%;
 }
 
+.areas .wrapper {
+	/*width: 800px;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	padding-bottom: 20px;
+}
+
 .areas:after {
 	content: "";
 	position: absolute;
@@ -267,12 +277,12 @@ figure {
 	text-align: center;
 	color: #fff;
 	/*background: #f14328;*/
+	margin: 0;
 	display: inline-block;
-	margin: 100px 0 0;
+	/*margin: 100px 0 0;*/
 	font-size: 57px;
 	/*font-weight: 500;*/
 	font-family: 'NeoSansStd-Regular';
-	padding: 12px 39px;
 	position: relative;
 	font-weight: normal;
 	line-height: 1;
@@ -290,14 +300,20 @@ figure {
 .areas ul {
 	padding: 0;
 	position: relative;
-	z-index: 1;
-	margin-top: 50px;
+	z-index: 3;
+	margin-top: 70px;
+	padding-top: 10px;
 }
 
 .areas li {
-	display: inline-block;
-	vertical-align: top;
-	width: 220px;
+	display: block;
+	float: left;
+	vertical-align: bottom;
+	width: 290px;
+	padding-top: 10px;
+	text-align: left;
+	padding: 0 20px;
+	box-sizing: border-box;
 }
 
 .areas li figure {
@@ -307,9 +323,8 @@ figure {
 .areas li h3 {
 	font-size: 18px;
 	color: #fff;
-	margin-top: 27px;
 	/*font-weight: 700;*/
-	font-family: 'NeoSansStd-Black';
+	font-family: 'NeoSansStd-Bold';
 	margin-bottom: 10px;
 	color: #F38371;
 	color: #fff;
@@ -318,10 +333,14 @@ figure {
 
 .areas li p {
 	font-size: 16px;
-	text-align: center;
 	color: white;
 	/*font-weight: 300;*/
-	font-family: 'NeoSansStd-Light';
+	font-family: 'Open Sans';
+	font-size: 14px;
+}
+
+.areas .img-block {
+	height: 65px;
 }
 
 /*------------------------------------*\
