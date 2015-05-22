@@ -6,19 +6,15 @@ body {
 	font-family: Arial, sans-serif;
 	opacity: .5;
 }*/
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
 
 body {
 	font-family: 'NeoSansStd-Regular';
-	/*300 Light
-	400 Regular
-	600 Medium
-	700 Bold
-	800 Ultra*/
-	/*#f14328;
-	FF8977
-	FF472A
-	7F453B
-	CC3922*/
 }
 
 figure {
@@ -65,7 +61,6 @@ figure {
 	right: 0;
 	overflow: hidden;
 	z-index: 4;
-	background: rgba(255, 255, 255, .4);
 }
 
 .main-header .logo {
@@ -104,7 +99,7 @@ figure {
 	content: "";
 	display: block;
 	width: 100%;
-	border-bottom: 3px solid #f14328;
+	border-bottom: 3px solid #fff;
 	position: absolute;
 	bottom: 3px;
 	opacity: 0;
@@ -121,21 +116,21 @@ figure {
 	content: "";
 	display: block;
 	width: 100%;
-	border-bottom: 3px solid #f14328;
+	border-bottom: 3px solid #F38371;
 	position: absolute;
 	bottom: -3px;
 	opacity: 1;
 }
 
 .main-header .main-menu li.active {
-	border-bottom: 3px solid #f14328;
+	border-bottom: 3px solid #F38371;
 	/*font-weight: 600;*/
-	font-family: 'NeoSansStd-Medium';
 }
 
 .main-header .main-menu li a {
 	text-decoration: none;
-	color: #555;
+	color: #fff;
+	font-family: 'NeoSansStd-Medium';
 }
 
 
@@ -149,25 +144,41 @@ figure {
 \*------------------------------------*/
 
 .slogan {
-	margin-top: 66px;
 	/*background: url(../img/front-background.jpg);*/
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
+	height: 100%;
+}
+.slogan:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(66, 66, 66, .6);
+}
+
+.slogan .wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
 }
 
 .slogan h1 {
-	margin: 140px 0;
-	padding: 63px 0;
+	margin: 0;
 	font-size: 57px;
-	text-align: center;
 	line-height: 1;
-	color: #444;
+	color: #fff;
 	position: relative;
 	z-index: 3;
+	line-height: 1.1;
 	font-weight: normal;
-	font-family: 'NeoSansStd-Medium';
-	background: rgba(255, 255, 255, .4);
+	font-family: 'NeoSansStd-Regular';
+	/*text-transform: uppercase;*/
 }
 
 .slogan .title-block .video-wrapper {
@@ -198,8 +209,8 @@ figure {
 }
 
 .slogan h1 .marked {
-	color: #f14328;
-	transform: translate(-50%, -50%);
+	font-family: 'NeoSansStd-Black';
+	color: #F38371;
 }
 
 .slogan video {
@@ -208,6 +219,18 @@ figure {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.slogan .description {
+	margin: 0;
+	position: relative;
+	z-index: 2;
+	font-size: 24px;
+	color: #fff;
+	font-family: 'NeoSansStd-Light';
+	line-height: 1.4;
+	font-family: 'Open Sans';
+	font-weight: 300;
 }
 
 /*------------------------------------*\
