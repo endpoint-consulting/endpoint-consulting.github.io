@@ -352,7 +352,6 @@ figure {
 
 .projects {
 	overflow: hidden;
-	height: 603px;
 	position: relative;
 	background: #fff;
 	height: 100%;
@@ -386,8 +385,8 @@ figure {
 	margin: 0;
 	position: relative;
 	overflow: hidden;
-	height: 300px;
 	text-align: center;
+	margin: 40px auto;
 }
 
 .projects li {
@@ -467,17 +466,18 @@ figure {
 
 .testimonials .text {
 	box-sizing: border-box;
-	padding: 24px 18px;
+	padding: 22px 18px;
 	/*font-style: italic;*/
 	/*font-weight: 300;*/
 	font-size: 14px;
 	color: white;
-	background: #f14328;
+	background: #F38371;
 	border-radius: 3px;
 	margin: 0;
 	height: 161px;
 	position: relative;
-	font-family: 'NeoSansStd-LightItalic';
+	font-family: 'Open Sans';
+	font-size: 14px;
 }
 
 .testimonials .author-block {
@@ -489,7 +489,7 @@ figure {
 	overflow: hidden;
 	width: 62px;
 	height: 62px;
-	border: 3px solid #f14328;
+	border: 3px solid #F38371;
 }
 
 .testimonials .ava img {
@@ -499,6 +499,7 @@ figure {
 .testimonials .author-text {
 	float: left;
 	font-weight: 300;
+	color: #666;
 }
 
 .testimonials .author-text .name {
@@ -507,12 +508,13 @@ figure {
 }
 
 .testimonials .author-text .name-text {
-	color: #ba473e;
+	color: #F38371;
+	font-family: 'NeoSansStd-Bold';
 }
 
 .testimonials .author-text .company {
-	margin: 7px 0 0 0;
-	font-size: 13px;
+	margin: 3px 0 0 0;
+	font-size: 14px;
 }
 
 .testimonials .author-text .place {
@@ -535,7 +537,7 @@ figure {
 	width: 26px;
 	height: 15px;
 	position: absolute;
-	bottom: -15px;
+	bottom: -14px;
 	left: 63px;
 }
 
@@ -564,7 +566,7 @@ figure {
 	width: 26px;
 	height: 15px;
 	position: absolute;
-	bottom: -15px;
+	bottom: -14px;
 	right: 63px;
 }
 
