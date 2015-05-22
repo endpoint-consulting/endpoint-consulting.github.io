@@ -40,7 +40,7 @@
 
 	function scrollToEl(element) {
 		$('html, body').animate({
-			scrollTop: ($(element).first().offset().top - 66)
+			scrollTop: ($(element).first().offset().top)
 		},500);
 	}
 

@@ -149,6 +149,7 @@ figure {
 	overflow: hidden;
 	position: relative;
 	height: 100%;
+	/*text-align: center;*/
 }
 .slogan:after {
 	content: "";
@@ -161,6 +162,7 @@ figure {
 }
 
 .slogan .wrapper {
+	/*width: 800px;*/
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -247,6 +249,8 @@ figure {
 
 .areas {
 	background: url(../img/areas-background.jpg);
+	background-size: cover;
+	height: 100%;
 }
 
 .areas:after {
@@ -265,27 +269,35 @@ figure {
 	/*background: #f14328;*/
 	display: inline-block;
 	margin: 100px 0 0;
-	font-size: 28px;
+	font-size: 57px;
 	/*font-weight: 500;*/
-	font-family: 'NeoSansStd-Medium';
+	font-family: 'NeoSansStd-Regular';
 	padding: 12px 39px;
-	text-transform: uppercase;
 	position: relative;
+	font-weight: normal;
+	line-height: 1;
 	z-index: 1;
-	color: #f14328;
+}
+
+.areas h2 .marked {
+	display: block;
+	/*text-transform: uppercase;*/
+	font-family: 'NeoSansStd-Black';
+	color: #F38371;
+	/*letter-spacing: .15em;*/
 }
 
 .areas ul {
 	padding: 0;
 	position: relative;
 	z-index: 1;
+	margin-top: 50px;
 }
 
 .areas li {
 	display: inline-block;
 	vertical-align: top;
-	margin: 75px 75px 0;
-	width: 310px;
+	width: 220px;
 }
 
 .areas li figure {
@@ -293,14 +305,15 @@ figure {
 }
 
 .areas li h3 {
-	text-transform: uppercase;
 	font-size: 18px;
 	color: #fff;
 	margin-top: 27px;
 	/*font-weight: 700;*/
-	font-family: 'NeoSansStd-Bold';
+	font-family: 'NeoSansStd-Black';
 	margin-bottom: 10px;
-	color: #f14328;
+	color: #F38371;
+	color: #fff;
+	font-weight: normal;
 }
 
 .areas li p {
@@ -576,6 +589,7 @@ figure {
 	background: url(../img/contacts-background.jpg);
 	background-size: cover;
 	position: relative;
+	height: 100%;
 }
 
 /*------------------------------------*\
