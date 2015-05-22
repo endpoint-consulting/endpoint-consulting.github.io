@@ -55,14 +55,15 @@ figure {
 
 .main-header {
 	position: fixed;
+	position: absolute;
 	height: 66px;
 	left: 0;
 	top: 0;
 	right: 0;
 	overflow: hidden;
 	z-index: 4;
-	background: rgba(0, 0, 0, .3);
-	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	/*background: rgba(0, 0, 0, .3);
+	border-bottom: 1px solid rgba(0, 0, 0, .2);*/
 }
 
 .main-header .logo {
@@ -219,7 +220,7 @@ figure {
 
 .slogan video {
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -384,7 +385,6 @@ figure {
 	padding: 0;
 	margin: 0;
 	position: relative;
-	overflow: hidden;
 	text-align: center;
 	margin: 40px auto;
 }
@@ -400,6 +400,41 @@ figure {
 	margin: 0 40px;
 }
 
+.projects .arrow-right {
+	width: 50px;
+	height: 50px;
+	top: 70px;
+	right: -50px;
+	position: absolute;
+	background: rgba(0, 0, 0, .0);
+	/*border-radius: 50%;*/
+	border: none;
+	padding: 0;
+}
+
+.projects .arrow-left {
+	width: 50px;
+	height: 50px;
+	top: 70px;
+	left: -50px;
+	position: absolute;
+	background: rgba(0, 0, 0, .0);
+	/*border-radius: 50%;*/
+	border: none;
+	padding: 0;
+}
+
+.projects .arrow-right svg {
+	margin-right: -3px;
+	margin-bottom: -1px;
+	fill: #888;
+}
+
+.projects .arrow-left svg {
+	margin-left: -2px;
+	margin-bottom: -1px;
+	fill: #888;
+}
 
 .projects li figcaption {
 	overflow: hidden;
@@ -441,6 +476,7 @@ figure {
 	-moz-transition: -moz-transform 0.4s;
 	transition: transform 0.4s;
 }
+
 /*
 .projects li:hover img {
 	transform: translateY(-150px);
@@ -472,7 +508,7 @@ figure {
 	font-size: 14px;
 	color: white;
 	background: #F38371;
-	border-radius: 3px;
+	border-radius: 5px;
 	margin: 0;
 	height: 161px;
 	position: relative;
@@ -600,12 +636,22 @@ figure {
 	height: 100%;
 }
 
+.contacts .wrapper {
+	/*width: 800px;*/
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	padding-bottom: 20px;
+}
+
 /*------------------------------------*\
 	#user-form
 \*------------------------------------*/
 
 .contacts .user-form {
-	/*background: rgba(0, 0, 0, .3);*/
+	background: rgba(0, 0, 0, .3);
 	padding: 43px 69px;
 	box-sizing: border-box;
 	position: relative;
@@ -640,13 +686,6 @@ figure {
 	z-index: 2;
 }
 
-.contacts .form-wrapper video {
-	-webkit-filter:blur(10px);
-	-ms-filter: blur(10px);
-	-o-filter: blur(10px);
-	filter:blur(10px);
-}
-
 .contacts .user-form input,
 .contacts .user-form textarea {
 	background: rgba(255, 255, 255, .8);
@@ -668,7 +707,7 @@ figure {
 .contacts .message {
 	box-sizing: border-box;
 	padding: 12px 19px;
-	font-size: 20px;
+	font-size: 18px;
 	color: #000;
 }
 
@@ -725,30 +764,9 @@ textarea:-ms-input-placeholder {
 	background: #f14328;
 }
 
-.contacts video {
-	width: 100%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-/*------------------------------------*\
-	#FOOTER
-\*------------------------------------*/
-
-.main-footer {
-	overflow: hidden;
-	height: 46px;
-	position: relative;
-	margin-top: -96px;
-	/*background: #666;*/
-	text-align: center;
-}
-
-.main-footer ul {
-	display: inline-block;
+.contacts ul {
 	margin: 0;
+	margin-top: 40px;
 	padding: 0;
 	text-align: center;
 	color: #000;
@@ -757,20 +775,28 @@ textarea:-ms-input-placeholder {
 	background: rgba(255, 255, 255, .9);
 }
 
-.main-footer li {
+.contacts li {
 	display: inline-block;
 	line-height: 46px;
 	margin: 0 25px;
 }
 
-.main-footer li img {
+.contacts li img {
 	vertical-align: middle;
 	margin-right: 10px;
 }
 
-.main-footer li span {
+.contacts li span {
 	vertical-align: middle;
 	font-size: 14px;
+}
+
+.contacts video {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /* MODAL WINDOW */
