@@ -61,11 +61,13 @@ figure {
 	right: 0;
 	overflow: hidden;
 	z-index: 4;
+	background: rgba(0, 0, 0, .3);
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
 .main-header .logo {
 	position: absolute;
-	top: 10px;
+	top: 15px;
 	left: 21px;
 }
 
@@ -99,7 +101,7 @@ figure {
 	content: "";
 	display: block;
 	width: 100%;
-	border-bottom: 3px solid #fff;
+	border-bottom: 3px solid #F38371;
 	position: absolute;
 	bottom: 3px;
 	opacity: 0;
@@ -290,7 +292,7 @@ figure {
 }
 
 .areas h2 .marked {
-	display: block;
+	/*display: block;*/
 	/*text-transform: uppercase;*/
 	font-family: 'NeoSansStd-Black';
 	color: #F38371;
@@ -329,6 +331,7 @@ figure {
 	color: #F38371;
 	color: #fff;
 	font-weight: normal;
+	color: #F38371;
 }
 
 .areas li p {
@@ -351,19 +354,53 @@ figure {
 	overflow: hidden;
 	height: 603px;
 	position: relative;
-	background: #ddd;
+	background: #fff;
+	height: 100%;
+}
+
+.projects .wrapper {
+	/*width: 800px;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	padding-bottom: 20px;
+}
+
+.projects .trust {
+	font-family: 'Open Sans';
+	font-size: 24px;
+	color: #666;
+	width: 800px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.projects .trust .marked {
+	color: #F38371;
 }
 
 .projects ul {
 	padding: 0;
 	margin: 0;
+	position: relative;
+	overflow: hidden;
+	height: 300px;
+	text-align: center;
 }
 
 .projects li {
 	display: block;
 	font-size: 0;
 	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 40px;
 }
+
 
 .projects li figcaption {
 	overflow: hidden;
@@ -372,6 +409,7 @@ figure {
 	font-size: 16px;
 	box-sizing: border-box;
 	padding: 20px 40px;
+	display: none;
 }
 
 .projects li figcaption h3 {
@@ -404,71 +442,20 @@ figure {
 	-moz-transition: -moz-transform 0.4s;
 	transition: transform 0.4s;
 }
-
+/*
 .projects li:hover img {
 	transform: translateY(-150px);
 }
 
 .projects li:hover figcaption {
 	transform: translateY(-150px);
-}
-
-.projects li:nth-child(1) {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.projects li:nth-child(1) img {
-	height: 603px;
-}
-
-.projects li:nth-child(2) {
-	position: absolute;
-	top: 0;
-	left: 370px;
-}
-
-.projects li:nth-child(2) img {
-	height: 279px;
-}
-
-.projects li:nth-child(3) {
-	position: absolute;
-	top: 0;
-	left: 731px;
-}
-
-.projects li:nth-child(3) img {
-	height: 279px;
-}
-
-.projects li:nth-child(4) {
-	position: absolute;
-	top: 279px;
-	left: 370px;
-}
-
-.projects li:nth-child(4) img {
-	height: 324px;
-}
-
-.projects li:nth-child(5) {
-	position: absolute;
-	top: 279px;
-	left: 619px;
-}
-
-.projects li:nth-child(5) img {
-	height: 324px;
-}
+}*/
 
 /*------------------------------------*\
 	#Testemonials
 \*------------------------------------*/
 
 .testimonials {
-	height: 400px;
 	overflow: hidden;
 }
 
@@ -538,7 +525,7 @@ figure {
 \*------------------------------------*/
 
 .testimonials .first-testimonial {
-	padding: 80px 85px 0 180px;
+	padding: 0 85px 0 180px;
 	box-sizing: border-box;
 }
 
@@ -567,7 +554,7 @@ figure {
 \*------------------------------------*/
 
 .testimonials .second-testimonial {
-	padding: 80px 178px 0 86px;
+	padding: 0 178px 0 86px;
 	box-sizing: border-box;
 }
 
