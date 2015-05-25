@@ -545,7 +545,7 @@ figure {
 \*------------------------------------*/
 
 .contacts .user-form {
-	padding: 43px 69px;
+	padding: 80px 69px 0;
 	box-sizing: border-box;
 	position: relative;
 	z-index: 2;
