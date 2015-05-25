@@ -763,12 +763,11 @@ figure {
 \*------------------------------------*/
 
 .contacts .user-form {
-	background: rgba(0, 0, 0, .3);
 	padding: 43px 69px;
 	box-sizing: border-box;
 	position: relative;
 	z-index: 2;
-	background: rgba(0, 0, 0, .30);
+	/*background: rgba(0, 0, 0, .30);*/
 }
 
 .contacts .form-wrapper {
@@ -840,31 +839,34 @@ textarea:-ms-input-placeholder {
 .contacts .user-form .submit {
 	margin: 0 auto;
 	display: block;
-	width: 190px;
+	float: left;
+	width: 160px;
 	height: 40px;
 	color: #fff;
 	font-weight: 400;
 	background: #f14328;
 	padding: 0;
+	margin: 0 12px 35px;
 }
 
 .contacts ul {
 	margin: 0;
-	margin-top: 40px;
+	float: left;
 	padding: 0;
 	text-align: center;
+	margin-left: 30px;
+	margin-top: -6px;
 	color: #fff;
 	position: relative;
 	font-weight: 700;
 	z-index: 2;
-	background: rgba(0, 0, 0, .3);
+	/*background: rgba(0, 0, 0, .3);*/
 	font-family: 'Open Sans';
 }
 
 .contacts li {
-	display: inline-block;
-	line-height: 46px;
-	margin: 0 25px;
+	display: block;
+	text-align: left;
 }
 
 .contacts li img {
