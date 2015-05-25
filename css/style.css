@@ -365,8 +365,19 @@ figure {
 .projects {
 	overflow: hidden;
 	position: relative;
-	background: #fff;
+	background: #444;
+	background: url(../img/projects.jpg);
+	background-size: cover;
 	height: 100%;
+}
+.projects:after {
+	content: "";
+	background: rgba(66, 66, 66, .8);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .projects .wrapper {
@@ -382,7 +393,7 @@ figure {
 .projects .trust {
 	font-family: 'Open Sans';
 	font-size: 24px;
-	color: #666;
+	color: #ddd;
 	width: 800px;
 	margin: 30px auto;
 	text-align: center;
@@ -393,7 +404,7 @@ figure {
 }
 
 .projects ul {
-	padding: 0;
+	padding: 30px 0 20px;
 	margin: 0;
 	position: relative;
 	text-align: center;
@@ -406,7 +417,7 @@ figure {
 	overflow: hidden;
 	width: 200px;
 	height: 200px;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 	display: inline-block;
 	margin: 0 40px;
 }
@@ -531,7 +542,7 @@ figure {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 	opacity: 0;
 	
 	-webkit-transition: all 0.4s ease-in-out;
@@ -604,12 +615,7 @@ figure {
 
 .testimonials {
 	overflow: hidden;
-}
-
-.testimonials .second-testimonial,
-.testimonials .first-testimonial {
-	width: 50%;
-	float: left;
+	font-family: 'Open Sans';
 }
 
 .testimonials .text {
@@ -619,25 +625,25 @@ figure {
 	/*font-weight: 300;*/
 	font-size: 14px;
 	color: white;
-	background: #F38371;
+	/*background: #F38371;*/
 	border-radius: 5px;
 	margin: 0;
-	height: 161px;
 	position: relative;
-	font-family: 'Open Sans';
 	font-size: 14px;
+	float: left;
+	color: #ddd;
 }
 
 .testimonials .author-block {
 	margin-top: 20px;
+	width: 236px;
 }
 
 .testimonials .ava {
-	border-radius: 50%;
 	overflow: hidden;
 	width: 62px;
 	height: 62px;
-	border: 3px solid #F38371;
+	border-radius: 50%;
 }
 
 .testimonials .ava img {
@@ -647,26 +653,18 @@ figure {
 .testimonials .author-text {
 	float: left;
 	font-weight: 300;
-	color: #666;
+	color: #aaa;
 }
 
 .testimonials .author-text .name {
-	margin: 4px 0 0 0;
-	font-size: 17px;
-}
-
-.testimonials .author-text .name-text {
-	color: #F38371;
-	font-family: 'NeoSansStd-Bold';
+	font-size: 14px;
 }
 
 .testimonials .author-text .company {
-	margin: 3px 0 0 0;
 	font-size: 14px;
 }
 
 .testimonials .author-text .place {
-	margin: 3px 0 0 0;
 	font-size: 14px;
 }
 
@@ -675,11 +673,12 @@ figure {
 \*------------------------------------*/
 
 .testimonials .first-testimonial {
-	padding: 0 85px 0 180px;
+	padding: 0 85px 0 90px;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
-.testimonials .first-testimonial .text:after {
+/*.testimonials .first-testimonial .text:after {
 	content: "";
 	background: url(../img/testimonial-arrow-left.png);
 	width: 26px;
@@ -687,53 +686,71 @@ figure {
 	position: absolute;
 	bottom: -14px;
 	left: 63px;
+}*/
+
+.testimonials .first-testimonial .text {
+	padding-left: 250px;
+	width: 800px;
+	float: left;
 }
 
 .testimonials .first-testimonial .ava {
 	margin-left: -3px;
-	float: left;
+	float: right;
+}
+
+.testimonials .first-testimonial .author-block {
+	position: absolute;
+	width: 236px;
 }
 
 .testimonials .first-testimonial .author-text {
-	float: left;
-	padding-left: 10px;
+	float: right;
+	padding-right: 16px;
+	text-align: right;
 }
 
 /*------------------------------------*\
 	#second testimonials
 \*------------------------------------*/
 
+
 .testimonials .second-testimonial {
-	padding: 0 178px 0 86px;
-	box-sizing: border-box;
+	overflow: hidden;
+	padding: 0 90px 0 0;
 }
 
-.testimonials .second-testimonial .text:after {
-	content: "";
-	background: url(../img/testimonial-arrow-right.png);
-	width: 26px;
-	height: 15px;
-	position: absolute;
-	bottom: -14px;
-	right: 63px;
-}
-
-.testimonials .second-testimonial .author-block {
-	float: right;
-}
-
-.testimonials .second-testimonial .ava {
-	float: right;
-}
-
-.testimonials .second-testimonial .author-text {
-	float: right;
+.testimonials .second-testimonial .text {
+	padding-right: 250px;
 	text-align: right;
-	padding-right: 10px;
+	width: 800px;
+	float: right;
 }
 
 .testimonials .second-testimonial .ava {
 	margin-right: -3px;
+	float: left;
+}
+
+.testimonials .second-testimonial .author-block {
+	position: absolute;
+	right: 90px;
+}
+
+.testimonials .second-testimonial .author-text {
+	float: left;
+	padding-left: 16px;
+	text-align: left;
+}
+
+.testimonials .second-testimonial .ava {
+	float: left;
+}
+
+.testimonials .second-testimonial .author-text {
+	float: left;
+	text-align: left;
+	padding-right: 10px;
 }
 
 /*------------------------------------*\
@@ -779,7 +796,7 @@ figure {
 
 .contacts .user-form input,
 .contacts .user-form textarea {
-	background: rgba(255, 255, 255, 1);
+	background: rgba(255, 255, 255, .9);
 	font-family: 'Open Sans';
 	font-weight: normal;
 	font-size: 16px;
@@ -844,7 +861,7 @@ textarea:-ms-input-placeholder {
 	height: 40px;
 	color: #fff;
 	font-weight: 400;
-	background: #f14328;
+	background: #F38371;
 	padding: 0;
 	margin: 0 12px 35px;
 }
