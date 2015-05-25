@@ -56,4 +56,15 @@
 	$('.modal .close').on('click', function () {
 		$('.overlay').hide();
 	});
+
+	// Menu
+
+	$(window).scroll(function() {
+		if ($('.areas').first().offset().top <= window.scrollY) {
+			$('.fixed-header').fadeIn();
+		} else {
+			$('.fixed-header').fadeOut();
+		}
+	});
+
 })();
