@@ -59,12 +59,15 @@
 
 	// Menu
 
-	$(window).scroll(function() {
+	$(window).scroll(tryToChangeMenu);
+
+	function tryToChangeMenu() {
 		if ($('.areas').first().offset().top <= window.scrollY) {
 			$('.fixed-header').fadeIn();
 		} else {
 			$('.fixed-header').fadeOut();
 		}
-	});
+	}
+	tryToChangeMenu();
 
 })();
