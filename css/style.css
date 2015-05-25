@@ -31,24 +31,6 @@ figure {
 	position: relative;
 }
 
-.lead-phrase p {
-	font-size: 22px;
-	width: 840px;
-	margin: 0 auto;
-	text-align: center;
-	padding: 80px 0;
-	line-height: 1.8;
-	color: #555;
-	font-family: 'NeoSansStd-Regular';
-}
-
-.lead-phrase p .marked {
-	font-style: italic;
-	/*font-weight: 700;*/
-	font-family: 'NeoSansStd-Bold';
-	color: #f14328;
-}
-
 /*------------------------------------*\
 	#HEADER
 \*------------------------------------*/
@@ -62,8 +44,6 @@ figure {
 	right: 0;
 	overflow: hidden;
 	z-index: 4;
-	/*background: rgba(0, 0, 0, .3);
-	border-bottom: 1px solid rgba(0, 0, 0, .2);*/
 }
 
 .main-header .logo {
@@ -314,20 +294,23 @@ figure {
 .areas ul {
 	padding: 0;
 	position: relative;
+	position: absolute;
+	top: -400px;
 	z-index: 3;
-	margin-top: 70px;
-	padding-top: 10px;
+	/*margin-top: 70px;
+	padding-top: 10px;*/
 }
 
 .areas li {
 	display: block;
 	float: left;
 	vertical-align: bottom;
-	width: 290px;
-	padding-top: 10px;
+	width: 440px;
 	text-align: left;
 	padding: 0 20px;
+	margin: 190px 60px 0;
 	box-sizing: border-box;
+	background: rgba(0, 0, 0, .2);
 }
 
 .areas li figure {
@@ -335,7 +318,7 @@ figure {
 }
 
 .areas li h3 {
-	font-size: 18px;
+	font-size: 20px;
 	color: #fff;
 	/*font-weight: 700;*/
 	font-family: 'NeoSansStd-Bold';
@@ -344,6 +327,7 @@ figure {
 	color: #fff;
 	font-weight: normal;
 	color: #F38371;
+	opacity: .8;
 }
 
 .areas li p {
@@ -352,6 +336,7 @@ figure {
 	/*font-weight: 300;*/
 	font-family: 'Open Sans';
 	font-size: 14px;
+	color: #ddd;
 }
 
 .areas .img-block {
@@ -392,10 +377,10 @@ figure {
 
 .projects .trust {
 	font-family: 'Open Sans';
-	font-size: 24px;
+	font-size: 20px;
 	color: #ddd;
 	width: 800px;
-	margin: 30px auto;
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -415,8 +400,8 @@ figure {
 	display: block;
 	font-size: 0;
 	overflow: hidden;
-	width: 200px;
-	height: 200px;
+	width: 170px;
+	height: 170px;
 	/*border-radius: 50%;*/
 	display: inline-block;
 	margin: 0 40px;
@@ -425,8 +410,8 @@ figure {
 .projects .arrow-right {
 	width: 50px;
 	height: 50px;
-	top: 70px;
-	right: -50px;
+	top: 85px;
+	right: 50px;
 	position: absolute;
 	background: rgba(0, 0, 0, .0);
 	/*border-radius: 50%;*/
@@ -437,8 +422,8 @@ figure {
 .projects .arrow-left {
 	width: 50px;
 	height: 50px;
-	top: 70px;
-	left: -50px;
+	top: 85px;
+	left: 50px;
 	position: absolute;
 	background: rgba(0, 0, 0, .0);
 	/*border-radius: 50%;*/
@@ -456,47 +441,6 @@ figure {
 	margin-left: -2px;
 	margin-bottom: -1px;
 	fill: #888;
-}
-
-.projects li figcaption {
-	overflow: hidden;
-	height: 150px;
-	background: #f14328;
-	font-size: 16px;
-	box-sizing: border-box;
-	padding: 20px 40px;
-	display: none;
-}
-
-.projects li figcaption h3 {
-	margin: 0;
-	font-size: 18px;
-	font-weight: normal;
-	font-family: 'NeoSansStd-Bold';
-	color: #fff;
-	text-transform: uppercase;
-}
-
-.projects li figcaption p {
-	margin: 7px 0;
-	color: #fff;
-}
-
-.projects li figcaption a {
-	margin-top: 7px;
-	display: inline-block;
-	padding: 7px 14px;
-	text-decoration: none;
-	background: rgba(255, 255, 255, .2);
-	color: #fff;
-	font-size: 14px;
-}
-
-.projects li img,
-.projects li figcaption {
-	-webkit-transition: -webkit-transform 0.4s;
-	-moz-transition: -moz-transform 0.4s;
-	transition: transform 0.4s;
 }
 
 
@@ -564,9 +508,9 @@ figure {
 .projects-list figure h3 {
 	color: #fff;
 	position: relative;
-	font-size: 22px;
-	height: 100px;
-	padding-top: 60px;
+	font-size: 16px;
+	height: 75px;
+	padding-top: 55px;
 	box-sizing: border-box;
 	margin: 0;
 	font-family: 'Open Sans', Arial, sans-serif;
@@ -574,10 +518,10 @@ figure {
 
 .projects-list figure p {
 	color: #fff;
-	padding: 10px 5px;
+	padding: 5px 5px 10px;
 	margin: 0;
 	font-size: 12px;
-	border-top: 1px solid rgba(255,255,255,0.5);
+	/*border-top: 1px solid rgba(255,255,255,0.5);*/
 }
 
 .projects-list figure a {
@@ -620,7 +564,7 @@ figure {
 
 .testimonials .text {
 	box-sizing: border-box;
-	padding: 22px 18px;
+	padding: 0 18px;
 	/*font-style: italic;*/
 	/*font-weight: 300;*/
 	font-size: 14px;
@@ -635,7 +579,6 @@ figure {
 }
 
 .testimonials .author-block {
-	margin-top: 20px;
 	width: 236px;
 }
 
