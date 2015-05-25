@@ -32,7 +32,6 @@ figure {
 \*------------------------------------*/
 
 .main-header {
-	position: fixed;
 	position: absolute;
 	height: 66px;
 	left: 0;
@@ -40,6 +39,12 @@ figure {
 	right: 0;
 	overflow: hidden;
 	z-index: 4;
+}
+
+.main-header .header-wrapper {
+	width: 1170px;
+	position: relative;
+	margin: 0 auto;
 }
 
 .main-header .logo {
@@ -272,10 +277,24 @@ figure {
 	left: 0;
 }
 
+.projects .trust {
+	font-family: 'Open Sans';
+	font-size: 20px;
+	color: #ddd;
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.projects .trust .marked {
+	color: #F38371;
+}
+
 .projects ul {
 	padding: 30px 0 20px;
 	text-align: center;
 	margin: 40px auto;
+	position: relative;
 }
 
 .projects li {
@@ -296,6 +315,7 @@ figure {
 	position: absolute;
 	border: none;
 	padding: 0;
+	background: rgba(0, 0, 0, .0);
 }
 
 .projects .arrow-left {
@@ -306,6 +326,7 @@ figure {
 	position: absolute;
 	border: none;
 	padding: 0;
+	background: rgba(0, 0, 0, .0);
 }
 
 .projects .arrow-right svg {
@@ -528,6 +549,9 @@ figure {
 	box-sizing: border-box;
 	position: relative;
 	z-index: 2;
+	width: 816px;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
 .contacts .user-form input,
