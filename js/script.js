@@ -1,3 +1,12 @@
+$(document).alton({
+    fullSlideContainer: 'full', // Tell Alton the full height container
+    singleSlideClass: 'slide', // Tell Alton the full height slide class
+    useSlideNumbers: false, // Set to false if you don't want to use pagination
+    slideNumbersBorderColor: '#fff', // Set the outside color of the pagination items (also used for active)
+    slideNumbersColor: 'transparent', // Set the inner color of the pagination items (not active)
+    bodyContainer: 'pageWrapper' // Tell Alton the body class
+});
+
 (function(){
 	"use strict"
 
@@ -59,7 +68,27 @@
 
 	// Menu
 
-	$(window).scroll(tryToChangeMenu);
+	function definePage() {
+		if ($('.areas').first().offset().top > window.scrollY || window.scrollY === 0) {
+			return sections[0].menuItem;
+		} else if ($('.projects').first().offset().top > window.scrollY) {
+			return sections[1].menuItem;
+		} else if ($('.contacts').first().offset().top > window.scrollY) {
+			return sections[2].menuItem;
+		} else {
+			return sections[3].menuItem;
+		}
+	}
+
+	function changeActive() {
+		setActive(definePage());
+	}
+
+	$(window).scroll(function () {
+		tryToChangeMenu();
+		definePage();
+		changeActive();
+	});
 
 	function tryToChangeMenu() {
 		if ($('.areas').first().offset().top <= window.scrollY) {
@@ -68,6 +97,5 @@
 			$('.fixed-header').fadeOut();
 		}
 	}
-	tryToChangeMenu();
 
 })();

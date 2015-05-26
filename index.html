@@ -59,25 +59,24 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/slick.css">
 </head>
-<body>
-	<div class="overlay">
+<body class="pageWrapper">
+    <div class="overlay">
 		<div class="modal">
 			<button class="close"><svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 0 48 48" width="25"><path d="M38 12.83l-2.83-2.83-11.17 11.17-11.17-11.17-2.83 2.83 11.17 11.17-11.17 11.17 2.83 2.83 11.17-11.17 11.17 11.17 2.83-2.83-11.17-11.17z"/><path d="M0 0h48v48h-48z" fill="none"/></svg></button>
 		</div>
 	</div>
 
 	<!-- HEADER -->
-	<header class="main-header">
+	<header class="main-header" id="main-header">
 		<div class="header-wrapper">
 			<div class="logo"><img src="img/logo-v2.png"></div>
 			<nav class="main-menu">
 				<ul>
-					<li class="active home-link"><a href="#home">Home</a></li>
-					<li class="services-link"><a href="#services">Services</a></li>
-					<li class="projects-link"><a href="#projects">Our Work</a></li>
-					<li class="contacts-link"><a href="#contacts">Contacts</a></li>
+					<li data-menuanchor="home" class="active home-link"><a href="#home">Home</a></li>
+					<li data-menuanchor="services" class="services-link"><a href="#services">Services</a></li>
+					<li data-menuanchor="projects" class="projects-link"><a href="#projects">Our Work</a></li>
+					<li data-menuanchor="contacts" class="contacts-link"><a href="#contacts">Contacts</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -98,129 +97,132 @@
 	</header>
 
 	<!-- SLOGAN -->
-	<section class="slogan">
-		<div class="wrapper">
-			<h1>Your <span class="marked">1 touch point</span><br> for all things software</h1>
-			<div class="description">
-				<p>Endpoint consulting is a contract software development firm with a us headquarters<br> and US based leadership team but with a global foot print of <span class="marked">developers</span> <br>and <span class="marked">designers</span> geared towards getting you the best value for your projects</p>
+    <section class="full">
+		<section class="slide slogan">
+			<div class="wrapper">
+				<h1>Your <span class="marked">1 touch point</span><br> for all things software</h1>
+				<div class="description">
+					<p>Endpoint consulting is a contract software development firm with a us headquarters<br> and US based leadership team but with a global foot print of <span class="marked">developers</span> <br>and <span class="marked">designers</span> geared towards getting you the best value for your projects</p>
+				</div>
+			</div>
+			<video autoplay loop id="bgvid">
+				<source src="video/team.mp4" type="video/mp4">
+			</video>
+		</section>
+
+		<!-- DESCRIPTION -->
+		
+
+		<!-- AREAS -->
+		<div class="slide areas">
+			<div class="wrapper">
+				<h2>Our areas of <span class="marked">expertise</span></h2>
+				<ul>
+					<li class="scalable">
+						<h3>Scalable applications</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus suscipit aliquid iusto ipsa earum, distinctio id fugiat consectetur nam voluptatibus.</p>
+					</li>
+					<li class="performance">
+						<h3>High performance databases</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus suscipit aliquid iusto ipsa earum, distinctio id fugiat consectetur nam voluptatibus.</p>
+					</li>
+					<li class="consulting">
+						<h3>IT and data center consulting</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus suscipit aliquid iusto ipsa earum, distinctio id fugiat consectetur nam voluptatibus.</p>
+					</li>
+					<li class="cto">
+						<h3>CTO (Service)</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus suscipit aliquid iusto ipsa earum, distinctio id fugiat consectetur nam voluptatibus.</p>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<video autoplay loop id="bgvid">
-			<source src="video/team.mp4" type="video/mp4">
-		</video>
-	</section>
 
-	<!-- DESCRIPTION -->
-	
+		
 
-	<!-- AREAS -->
-	<div class="areas">
-		<div class="wrapper">
-			<h2>Our areas of <span class="marked">expertise</span></h2>
-			<ul>
-				<li class="scalable">
-					<h3>Scalable applications</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus suscipit aliquid iusto ipsa earum, distinctio id fugiat consectetur nam voluptatibus.</p>
-				</li>
-				<li class="performance">
-					<h3>High performance databases</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus suscipit aliquid iusto ipsa earum, distinctio id fugiat consectetur nam voluptatibus.</p>
-				</li>
-				<li class="consulting">
-					<h3>IT and data center consulting</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus suscipit aliquid iusto ipsa earum, distinctio id fugiat consectetur nam voluptatibus.</p>
-				</li>
-				<li class="cto">
-					<h3>CTO (Service)</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus suscipit aliquid iusto ipsa earum, distinctio id fugiat consectetur nam voluptatibus.</p>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	
-
-	<!-- PROJECTS -->
-	<div class="projects">
-		<div class="wrapper">
-		<!-- TRUST -->
-			<div class="trust">
-				<p>Some of the biggest brands in the country trust us with their software and you should to. We've been in business for <span class="marked">20 years</span> and <span class="marked">90%</span> of our clients are repeat customers</p>
-			</div>
-			<ul class="projects-list">
-				<li class="ch-item project-1">
-					<figure class="ch-info">
-						<h3>Brainiac</h3>
-						<p>A projects for the customer</p>
-						<a href="#modal">Show</a>
-					</figure>
-				</li>
-				<li class="ch-item project-2">
-					<figure class="ch-info">
-						<h3>Brainiac</h3>
-						<p>A projects for the customer</p>
-						<a href="#modal">Show</a>
-					</figure>
-				</li>
-				<li class="ch-item project-3">
-					<figure class="ch-info">
-						<h3>Brainiac</h3>
-						<p>A projects for the customer</p>
-						<a href="#modal">Show</a>
-					</figure>
-				</li>
-				<li class="ch-item project-4">
-					<figure class="ch-info">
-						<h3>Brainiac</h3>
-						<p>A projects for the customer</p>
-						<a href="#modal">Show</a>
-					</figure>
-				</li>
-				<button class="arrow-right"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="52px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="52px" xml:space="preserve"><polygon points="160,115.4 180.7,96 352,256 180.7,416 160,396.7 310.5,256 "/></svg></button>
-				<button class="arrow-left"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="52px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="52px" xml:space="preserve"><polygon points="352,115.4 331.3,96 160,256 331.3,416 352,396.7 201.5,256 "/></svg></button>
-			</ul>
-			<div class="testimonials">
-				<div class="first-testimonial">
-					<p class="text">Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus. Quamquam te quidem video minime esse deterritum. Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici videtur.</p>
-					<div class="author-block">
-						<div class="ava"><img src="img/testimonial-ava-left.jpg"></div>
-						<div class="author-text">
-							<div class="name"><span class="name-text">Name</span> | Desingation</div>
-							<div class="company">Company</div>
-							<div class="place">Place</div>
+		<!-- PROJECTS -->
+		<div class="slide projects">
+			<div class="wrapper">
+			<!-- TRUST -->
+				<div class="trust">
+					<p>Some of the biggest brands in the country trust us with their software and you should to. We've been in business for <span class="marked">20 years</span> and <span class="marked">90%</span> of our clients are repeat customers</p>
+				</div>
+				<ul class="projects-list">
+					<li class="ch-item project-1">
+						<figure class="ch-info">
+							<h3>Brainiac</h3>
+							<p>A projects for the customer</p>
+							<a href="#modal">Show</a>
+						</figure>
+					</li>
+					<li class="ch-item project-2">
+						<figure class="ch-info">
+							<h3>Brainiac</h3>
+							<p>A projects for the customer</p>
+							<a href="#modal">Show</a>
+						</figure>
+					</li>
+					<li class="ch-item project-3">
+						<figure class="ch-info">
+							<h3>Brainiac</h3>
+							<p>A projects for the customer</p>
+							<a href="#modal">Show</a>
+						</figure>
+					</li>
+					<li class="ch-item project-4">
+						<figure class="ch-info">
+							<h3>Brainiac</h3>
+							<p>A projects for the customer</p>
+							<a href="#modal">Show</a>
+						</figure>
+					</li>
+					<button class="arrow-right"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="52px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="52px" xml:space="preserve"><polygon points="160,115.4 180.7,96 352,256 180.7,416 160,396.7 310.5,256 "/></svg></button>
+					<button class="arrow-left"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="52px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="52px" xml:space="preserve"><polygon points="352,115.4 331.3,96 160,256 331.3,416 352,396.7 201.5,256 "/></svg></button>
+				</ul>
+				<div class="testimonials">
+					<div class="first-testimonial">
+						<p class="text">Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus. Quamquam te quidem video minime esse deterritum. Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici videtur.</p>
+						<div class="author-block">
+							<div class="ava"><img src="img/testimonial-ava-left.jpg"></div>
+							<div class="author-text">
+								<div class="name"><span class="name-text">Name</span> | Desingation</div>
+								<div class="company">Company</div>
+								<div class="place">Place</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-		
-		
-	<!-- CONTACTS -->
-	<div class="contacts">
-		<div class="wrapper">
-			<!-- <p>We thrive on building great applications and exceeding our clients expectations.<br> Hire us and let us show you what we can do for you.</p> -->
-			<form class="user-form">
-				<input type="text" placeholder="First Name" class="first-name">
-				<input type="text" placeholder="Last Name" class="last-name">
-				<input type="text" placeholder="Email" class="email">
-				<input type="text" placeholder="Phone" class="phone">
-				<input type="text" placeholder="Subject" class="subject">
-				<textarea type="text" placeholder="Message" class="message"></textarea>
-				<input type="submit" value="Submit" class="submit">
-				<ul>
-					<li>ContactUs@EndpointConsulting.com</li>
-					<li>(954) 536-5939</li>
-				</ul>
-			</form>
+			
+			
+		<!-- CONTACTS -->
+		<div class="slide contacts">
+			<div class="wrapper">
+				<!-- <p>We thrive on building great applications and exceeding our clients expectations.<br> Hire us and let us show you what we can do for you.</p> -->
+				<form class="user-form">
+					<input type="text" placeholder="First Name" class="first-name">
+					<input type="text" placeholder="Last Name" class="last-name">
+					<input type="text" placeholder="Email" class="email">
+					<input type="text" placeholder="Phone" class="phone">
+					<input type="text" placeholder="Subject" class="subject">
+					<textarea type="text" placeholder="Message" class="message"></textarea>
+					<input type="submit" value="Submit" class="submit">
+					<ul>
+						<li>ContactUs@EndpointConsulting.com</li>
+						<li>(954) 536-5939</li>
+					</ul>
+				</form>
+			</div>
+
+			<video autoplay loop id="bgvid">
+				<source src="video/town.m4v" type="video/mp4">
+			</video>
 		</div>
-
-		<video autoplay loop id="bgvid">
-			<source src="video/town.m4v" type="video/mp4">
-		</video>
-	</div>
-
+	</section>
+	
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery.alton.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/slick.min.js"></script>
 </body>
