@@ -28,6 +28,13 @@ figure {
 	z-index: 3;
 }
 
+#slide-numbers {
+	display: none;
+	opacity: .0;
+	width: 0;
+	height: 0;
+}
+
 /*------------------------------------*\
 	#HEADER
 \*------------------------------------*/
@@ -39,7 +46,7 @@ figure {
 	top: 0;
 	right: 0;
 	overflow: hidden;
-	z-index: 4;
+	z-index: 1001;
 }
 
 .main-header .header-wrapper {
@@ -72,8 +79,9 @@ figure {
 	float: left;
 	margin: 0 19px;
 	display: block;
-	height: 20px;
+	height: 22px;
 	position: relative;
+	cursor: pointer;
 }
 
 .main-header .main-menu li:after {
@@ -116,6 +124,7 @@ figure {
 	position: fixed;
 	background: rgba(0, 0, 0, .3);
 	display: none;
+	z-index: 1001;
 }
 
 
@@ -648,10 +657,6 @@ figure {
 .contacts li {
 	display: block;
 	text-align: left;
-}
-
-.contacts li span {
-	background: rgba(0,0,0,.4);
 }
 
 .contacts li img {

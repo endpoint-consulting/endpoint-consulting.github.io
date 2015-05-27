@@ -1,10 +1,10 @@
 $(document).alton({
-    fullSlideContainer: 'full', // Tell Alton the full height container
-    singleSlideClass: 'slide', // Tell Alton the full height slide class
-    useSlideNumbers: false, // Set to false if you don't want to use pagination
-    slideNumbersBorderColor: '#fff', // Set the outside color of the pagination items (also used for active)
-    slideNumbersColor: 'transparent', // Set the inner color of the pagination items (not active)
-    bodyContainer: 'pageWrapper' // Tell Alton the body class
+    fullSlideContainer: 'full',
+    singleSlideClass: 'slide',
+    useSlideNumbers: true,
+    slideNumbersBorderColor: '#fff',
+    slideNumbersColor: 'transparent',
+    bodyContainer: 'pageWrapper'
 });
 
 (function(){
@@ -29,28 +29,33 @@ $(document).alton({
 		}
 	];
 
+
 	sections[0].menuItem.on('click', function() {
-		scrollToEl(sections[0].element);
-		setActive(sections[0].menuItem);
+		$('.paginate')[0].click()
 	});
 	sections[1].menuItem.on('click', function() {
-		scrollToEl(sections[1].element);
-		setActive(sections[1].menuItem);
+		$('.paginate')[1].click()
 	});
 	sections[2].menuItem.on('click', function() {
-		scrollToEl(sections[2].element);
-		setActive(sections[2].menuItem);
+		$('.paginate')[2].click()
 	});
 	sections[3].menuItem.on('click', function() {
-		scrollToEl(sections[3].element);
-		setActive(sections[3].menuItem);
+		$('.paginate')[3].click()
 	});
 	
-
-	function scrollToEl(element) {
-		$('html, body').animate({
-			scrollTop: ($(element).first().offset().top)
-		},500);
+	function changeActive() {
+		if ($('.paginate:nth-child(1)').hasClass('active')) {
+			setActive($('.main-menu li:nth-child(1)'));
+		}
+		if ($('.paginate:nth-child(2)').hasClass('active')) {
+			setActive($('.main-menu li:nth-child(2)'));
+		}
+		if ($('.paginate:nth-child(3)').hasClass('active')) {
+			setActive($('.main-menu li:nth-child(3)'));
+		}
+		if ($('.paginate:nth-child(4)').hasClass('active')) {
+			setActive($('.main-menu li:nth-child(4)'));
+		}
 	}
 
 	function setActive(element) {
@@ -58,35 +63,8 @@ $(document).alton({
 		element.addClass('active');
 	}
 
-	$('.projects-list a').on('click', function () {
-		$('.overlay').show();
-	});
-
-	$('.modal .close').on('click', function () {
-		$('.overlay').hide();
-	});
-
-	// Menu
-
-	function definePage() {
-		if ($('.areas').first().offset().top > window.scrollY || window.scrollY === 0) {
-			return sections[0].menuItem;
-		} else if ($('.projects').first().offset().top > window.scrollY) {
-			return sections[1].menuItem;
-		} else if ($('.contacts').first().offset().top > window.scrollY) {
-			return sections[2].menuItem;
-		} else {
-			return sections[3].menuItem;
-		}
-	}
-
-	function changeActive() {
-		setActive(definePage());
-	}
-
 	$(window).scroll(function () {
 		tryToChangeMenu();
-		definePage();
 		changeActive();
 	});
 
