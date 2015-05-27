@@ -30,6 +30,10 @@ $(document).alton({
 	];
 
 
+	$('.logo').on('click', function() {
+		$('.paginate')[0].click()
+	});
+
 	sections[0].menuItem.on('click', function() {
 		$('.paginate')[0].click()
 	});
