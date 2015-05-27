@@ -255,6 +255,34 @@ figure {
 	height: 65px;
 }
 
+.scalable {
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 60px;
+}
+
+.performance {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 40px;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 20px;
+}
+
+.consulting {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 60px;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 20px;
+}
+
+.cto {
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 40px;
+}
+
 /*------------------------------------*\
 	#Projects
 \*------------------------------------*/
@@ -639,6 +667,55 @@ figure {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.first-name {
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.last-name {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 10px;
+}
+
+.email {
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.phone {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 10px;
+}
+
+.subject {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.message {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.submit {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 10px;
 }
 
 /* MODAL WINDOW */
