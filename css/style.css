@@ -645,8 +645,8 @@ figure {
 	background: #F38371;
 	padding: 0;
 	margin: 0 12px 0;
-	-webkit-transition: background .2s; /* Safari */
-    transition: background .2s;
+	-webkit-transition: background .2s;
+	transition: background .2s;
 }
 
 .contacts .user-form .submit:hover {
@@ -716,7 +716,7 @@ figure {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 999;
+	z-index: 1999;
 	display: none;
 }
 
@@ -724,10 +724,21 @@ figure {
 	background: #fff;
 	position: fixed;
 	top: 80px;
-	right: 80px;
 	bottom: 80px;
-	left: 80px;
-	z-index: 1000;
+	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2000;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.modal .modal-wrapper {
+	width: 960px;
+	font-family: "Open Sans";
+	margin: 0 auto;
+	overflow-y: scroll;
+	height: calc(100% - 100px);
 }
 
 .modal .close {
@@ -735,11 +746,31 @@ figure {
 	top: 0;
 	right: 0;
 	border: none;
-	background: #ddd;
+	background: none;
 	width: 50px;
 	height: 50px;
+	border-top-right-radius: 50%;
+	fill: #444;
+	-webkit-transition: fill .2s;
+	transition: fill .2s;
+	outline: none;
 }
 .modal .close:hover {
-	background: #555;
-	fill: #fff;
+	fill: #888;
+}
+
+.modal header {
+	background: #ddd;
+}
+
+.modal h3 {
+	text-align: center;
+	margin: 0;
+	margin-right: 50px;
+	height: 50px;
+	line-height: 50px;
+	color: #444;
+	font-weight: normal;
+	font-size: 20px;
+	font-family: 'NeoSansStd-Medium';
 }

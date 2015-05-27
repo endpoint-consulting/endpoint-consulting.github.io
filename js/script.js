@@ -80,4 +80,13 @@ $(document).alton({
 		}
 	}
 
+	// MODAL
+	$('.projects-list a').on('click', function () {
+		$('.overlay').show();
+	});
+
+	$('.modal .close').on('click', function () {
+		$('.overlay').hide();
+	});
+
 })();
