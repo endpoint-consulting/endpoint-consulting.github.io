@@ -23,6 +23,7 @@ figure {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	margin-top: 33px;
 	transform: translate(-50%, -50%);
 	z-index: 3;
 }
@@ -220,17 +221,19 @@ figure {
 .areas ul {
 	padding: 0;
 	position: absolute;
-	top: -400px;
+	top: 50%;
+	margin-top: 0;
+	transform: translateY(-50%);
 }
 
 .areas li {
-	display: block;
-	float: left;
+	display: inline-block;
 	width: 440px;
 	padding: 0 20px;
-	margin: 190px 60px 0;
+	margin: 100px 60px;
 	box-sizing: border-box;
 	background: rgba(0, 0, 0, .2);
+	vertical-align: top;
 }
 
 .areas li h3 {
@@ -314,6 +317,10 @@ figure {
 	text-align: center;
 }
 
+.projects .trust p {
+	margin: 0;
+}
+
 .projects .trust .marked {
 	color: #F38371;
 }
@@ -329,40 +336,10 @@ figure {
 	display: block;
 	font-size: 0;
 	overflow: hidden;
-	width: 170px;
-	height: 170px;
+	width: 190px;
+	height: 190px;
 	display: inline-block;
-	margin: 0 40px;
-}
-
-.projects .arrow-right {
-	width: 50px;
-	height: 50px;
-	top: 85px;
-	right: 50px;
-	position: absolute;
-	border: none;
-	padding: 0;
-	background: rgba(0, 0, 0, .0);
-}
-
-.projects .arrow-left {
-	width: 50px;
-	height: 50px;
-	top: 85px;
-	left: 50px;
-	position: absolute;
-	border: none;
-	padding: 0;
-	background: rgba(0, 0, 0, .0);
-}
-
-.projects .arrow-right svg {
-	fill: #888;
-}
-
-.projects .arrow-left svg {
-	fill: #888;
+	margin: 0 20px;
 }
 
 
@@ -371,7 +348,7 @@ figure {
 .ch-item {
 	width: 100%;
 	height: 100%;
-	border-radius: 50%;
+	border-radius: 50% !important;
 	position: relative;
 	cursor: default;
 	box-shadow: 
@@ -387,21 +364,37 @@ figure {
 .projects-list .project-1 {
 	background-image: url(../img/project1.jpg);
 	background-size: cover;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
 }
 
 .projects-list .project-2 {
 	background-image: url(../img/project2.jpg);
 	background-size: cover;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
 }
 
 .projects-list .project-3 {
 	background-image: url(../img/project3.jpg);
 	background-size: cover;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
 }
 
 .projects-list .project-4 {
 	background-image: url(../img/project4.jpg);
 	background-size: cover;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
 }
 
 .projects-list figure {
@@ -430,8 +423,8 @@ figure {
 	color: #fff;
 	position: relative;
 	font-size: 16px;
-	height: 75px;
-	padding-top: 55px;
+	height: 85px;
+	padding-top: 65px;
 	box-sizing: border-box;
 	margin: 0;
 	font-family: 'Open Sans', Arial, sans-serif;
@@ -508,10 +501,9 @@ figure {
 }
 
 .testimonials .author-text {
-	float: left;
 	font-weight: 300;
-	color: #aaa;
 	font-size: 14px;
+	color: #aaa;
 }
 
 /*------------------------------------*\
@@ -540,12 +532,6 @@ figure {
 	width: 236px;
 }
 
-.testimonials .first-testimonial .author-text {
-	float: right;
-	padding-right: 16px;
-	text-align: right;
-}
-
 /*------------------------------------*\
 	#Contacts
 \*------------------------------------*/
@@ -568,12 +554,25 @@ figure {
 	z-index: 2;
 }
 
+.contacts .hire-us {
+	font-family: 'Open Sans';
+	font-size: 20px;
+	color: #ddd;
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contacts .hire-us .marked {
+	color: #F38371;
+}
+
 /*------------------------------------*\
 	#user-form
 \*------------------------------------*/
 
 .contacts .user-form {
-	padding: 80px 69px 0;
+	padding: 60px 69px 0;
 	box-sizing: border-box;
 	position: relative;
 	z-index: 2;
@@ -628,7 +627,7 @@ figure {
 	color: #fff;
 	background: #F38371;
 	padding: 0;
-	margin: 0 12px 35px;
+	margin: 0 12px 0;
 }
 
 .contacts ul {
@@ -637,12 +636,13 @@ figure {
 	padding: 0;
 	text-align: center;
 	margin-left: 30px;
-	margin-top: -6px;
+	margin-top: -4px;
 	color: #fff;
 	position: relative;
-	font-weight: 700;
+	font-weight: 500;
 	z-index: 2;
 	font-family: 'Open Sans';
+	color: #ddd;
 }
 
 .contacts li {
@@ -650,14 +650,13 @@ figure {
 	text-align: left;
 }
 
+.contacts li span {
+	background: rgba(0,0,0,.4);
+}
+
 .contacts li img {
 	vertical-align: middle;
 	margin-right: 10px;
-}
-
-.contacts li span {
-	vertical-align: middle;
-	font-size: 14px;
 }
 
 .contacts video {
@@ -706,16 +705,17 @@ figure {
 
 .message {
 	border-top-right-radius: 10px;
-	border-bottom-right-radius: 40px;
+	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
 }
 
 .submit {
 	border-top-right-radius: 10px;
-	border-bottom-right-radius: 40px;
-	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
+	margin: 0;
 }
 
 /* MODAL WINDOW */
