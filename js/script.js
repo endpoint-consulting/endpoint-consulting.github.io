@@ -89,4 +89,21 @@ $(document).alton({
 		$('.overlay').hide();
 	});
 
+	// ADAPTIVE VIDEO
+
+	$(window).resize(resizeVideo);
+
+	function resizeVideo() {
+		if ($(window).width()/$(window).height() < 1.777) {
+			if(!$('video').hasClass('height-align')) {
+				$('video').addClass('height-align');
+			}
+		} else {
+			if($('video').hasClass('height-align')) {
+				$('video').removeClass('height-align');
+			}
+		}
+	}
+	resizeVideo();
+
 })();

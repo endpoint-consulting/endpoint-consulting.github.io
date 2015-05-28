@@ -35,6 +35,11 @@ figure {
 	height: 0;
 }
 
+.height-align {
+	width: auto !important;
+	height: 100% !important;
+}
+
 /*------------------------------------*\
 	#HEADER
 \*------------------------------------*/
@@ -309,7 +314,7 @@ figure {
 	overflow: hidden;
 	position: relative;
 	background: #444;
-	background: url(../img/projects.jpg);
+	background: url(../img/projecst-background.jpg);
 	background-size: cover;
 	height: 100%;
 }
