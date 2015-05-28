@@ -729,40 +729,125 @@ figure {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 2000;
+	color: #000;
+	/*border-radius: 15px;*/
+	overflow: hidden;
+}
+
+.modal .row {
+	padding: 0 20px;
+}
+
+.modal .row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.modal .cell-1 {
+	padding: 0 20px;
+}
+
+.modal .cell-2 {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+.modal .cell-3 {
+	float: left;
+	width: 33.333%;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+.modal .cell-3-2 {
+	float: left;
+	width: 66.666%;
+	box-sizing: border-box;
+	padding: 0 20px;
 }
 
 .modal .modal-wrapper {
 	width: 960px;
 	box-sizing: border-box;
-	padding: 0 40px;
 	font-family: "Open Sans";
 	margin: 0 auto;
 	overflow-y: scroll;
-	height: calc(100% - 70px);
+	height: calc(100% - 100px);
+	padding-bottom: 40px;
 }
 
 .modal .close {
 	position: absolute;
-	top: 5px;
+	top: 10px;
 	text-align: center;
-	right: 5px;
+	right: 10px;
 	border: none;
 	background: none;
 	width: 30px;
 	height: 30px;
 	border-top-right-radius: 50%;
-	fill: #444;
-	-webkit-transition: fill .2s;
-	transition: fill .2s;
+	fill: #666;
+	-webkit-transition: fill .2s, border-color .2s;
+	transition: fill .2s, border-color .2s;
 	outline: none;
 	border-radius: 50%;
+	/*background: #fff;*/
+	padding: 0;
+	/*border: 2px solid #666;*/
 }
+.modal .close svg {
+	margin-top: 2px;
+}
+
 .modal .close:hover {
-	fill: #888;
+	fill: #000;
+	border-color: #F38371;
 }
 
 .modal header {
-	background: #ddd;
+	background: #eee;
+	height: 50px;
+}
+
+.modal footer {
+	height: 50px;
+	background: #eee;
+	line-height: 44px;
+	font-family: "Open Sans";
+	padding-left: 40px;
+}
+
+.modal footer a {
+	font-size: 14px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.modal footer a:hover .link-text {
+	color: #DC5B5F;
+	border-bottom-color: #F38371;
+}
+
+.modal footer a:hover svg {
+	fill: #DC5B5F;
+}
+
+.modal footer a .link-text {
+	color: #444;
+	border-bottom: 1px solid #888;
+	-webkit-transition: color .2s, border-bottom-color .2s;
+	transition: color .2s, border-bottom-color .2s;
+}
+
+.modal footer svg {
+	vertical-align: middle;
+	padding-right: 10px;
+	fill: #F38371;
+	-webkit-transition: fill .2s;
+	transition: fill .2s;
 }
 
 .modal p {
@@ -777,12 +862,58 @@ figure {
 	line-height: 50px;
 	color: #444;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 700;
 	font-family: "Open Sans";
 }
 
 .modal h4 {
-	margin: 30px 0 10px;
+	margin: 40px 0 5px;
 	color: #F38371;
+	font-size: 16px;
+}
+
+.modal h5 {
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0;
+	color: #444;
+	margin: 20px 0 5px;
+}
+
+.modal ul {
+	margin: 0;
+}
+
+.modal .newspapers-brands img {
+	width: 100%;
+	margin: 40px 0;
+}
+
+.modal .technologies h5,
+.modal .technologies ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.modal .technologies li {
+	display: inline;
+}
+
+.modal .technologies li:not(:last-child):after {
+	content: ", ";
+}
+
+.modal .quote {
+	text-align: center;
+	padding: 40px 60px 0;
+	font-weight: 600;
+	color: #444;
+}
+
+.modal .quote .author {
+	font-size: 14px;
+	color: #888;
+	font-weight: 400;
 }
