@@ -585,6 +585,22 @@ figure {
 	overflow: hidden;
 }
 
+.contacts .user-form .invalid {
+	box-shadow: 0 0 45px 20px rgba(220, 91, 95, 1);
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {box-shadow: 0 0 45px 10px rgba(220, 91, 95, 1);}
+    80%  {box-shadow: 0 0 45px 10px rgba(220, 91, 95, 1);}
+    85%  {box-shadow: 0 0 45px 20px rgba(220, 91, 95, 1);}
+    90%  {box-shadow: 0 0 45px 10px rgba(220, 91, 95, 1);}
+    95% {box-shadow: 0 0 45px 20px rgba(220, 91, 95, 1);}
+    100% {box-shadow: 0 0 45px 10px rgba(220, 91, 95, 1);}
+}
+
 .contacts .user-form input,
 .contacts .user-form textarea {
 	background: rgba(255, 255, 255, .9);
