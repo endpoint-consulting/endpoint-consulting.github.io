@@ -879,24 +879,28 @@ figure {
 	margin: 40px 0;
 }
 
-.modal .technologies h5,
+.modal .technologies h4 {
+	text-align: center;
+	margin: 0;
+}
+
 .modal .technologies ul {
-	display: inline;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 
 .modal .technologies li {
-	display: inline;
-}
-
-.modal .technologies li:not(:last-child):after {
-	content: ", ";
+	display: inline-block;
+	margin: 10px;
+	padding: 5px 10px;
+	background: #eee;
+	font-size: 14px;
 }
 
 .modal .quote {
 	text-align: center;
-	padding: 40px 60px 0;
+	padding: 60px 60px 20px;
 	font-weight: 600;
 	color: #444;
 }

@@ -79,7 +79,7 @@
 				</div>
 				<div class="row">
 					<div class="cell-1 technologies">
-						<h5>Technologies involved:</h5>
+						<h4>Technologies involved:</h4>
 						<ul>
 							<li>SQL DBA</li>
 							<li>.Net development</li>
@@ -278,22 +278,22 @@
 	<script src="js/script.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script type="text/javascript">
-		function sendMail(){
+		function sendMail() {
 			$.ajax({
 				type: "POST",
 				url: "https://mandrillapp.com/api/1.0/messages/send.json",
 				data: {
 					'key': 'vcM20r_Z5GOpETXtZztGJQ',
 					'message': {
-						'from_email': 'boykiv1@hotmail.com',
+						'from_email': 'boykiv@hotmail.com',
 						'to': [
 							{
-								'email': 'boykiv@hotmail.com',
+								'email': 'alexander.boykiv@gmail.com',
 								'name': 'YOUR_RECEIVER_NAME',
 								'type': 'to'
 							}
 						],
-						'subject': 'title',
+						'subject': 'from server',
 						'html': 'html can be used'
 					}
 				}
