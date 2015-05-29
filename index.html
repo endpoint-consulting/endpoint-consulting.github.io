@@ -59,6 +59,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sweetalert.css">
 </head>
 <body class="pageWrapper">
     <div class="overlay">
@@ -252,19 +253,19 @@
 		<div class="slide contacts">
 			<div class="wrapper">
 				<p class="hire-us">We thrive on building great applications and exceeding our clients expectations.<br> <span class="marked">Hire us</span> and let us show you what we can do for you.</p>
-				<form class="user-form">
-					<input type="text" placeholder="First Name" class="first-name">
-					<input type="text" placeholder="Last Name" class="last-name">
-					<input type="text" placeholder="Email" class="email">
-					<input type="text" placeholder="Phone" class="phone">
-					<input type="text" placeholder="Subject" class="subject">
-					<textarea type="text" placeholder="Message" class="message"></textarea>
-					<input type="submit" value="Submit" class="submit">
+				<div class="user-form" id="frmContact">
+					<input type="text" id="userName" placeholder="First Name" class="first-name">
+					<input type="text" id="lastName" placeholder="Last Name" class="last-name">
+					<input type="text" id="userEmail" placeholder="Email" class="email">
+					<input type="text" if="phone" placeholder="Phone" class="phone">
+					<input type="text" id="subject" placeholder="Subject" class="subject">
+					<textarea type="text" id="content" placeholder="Message" class="message"></textarea>
+					<input type="submit" onClick="sendContact();" value="Submit" class="submit">
 					<ul>
 						<li>ContactUs@EndpointConsulting.com</li>
 						<li>(954) 536-5939</li>
 					</ul>
-				</form>
+				</div>
 			</div>
 
 			<video autoplay loop id="bgvid">
@@ -277,28 +278,59 @@
 	<script src="js/jquery.alton.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script type="text/javascript">
-		function sendMail() {
-			$.ajax({
-				type: "POST",
-				url: "https://mandrillapp.com/api/1.0/messages/send.json",
-				data: {
-					'key': 'hsV3ANgX9KgIqE06ceboIg',
-					'message': {
-						'from_email': 'boykiv@hotmail.com',
-						'to': [
-							{
-								'email': 'hack4tourism@yandex.ru',
-								'name': 'YOUR_RECEIVER_NAME',
-								'type': 'to'
-							}
-						],
-						'subject': 'from server new',
-						'html': 'html can be used'
-					}
-				}
-			});
+	<script src="js/sweetalert.min.js"></script>
+	<script>
+		function sendContact() {
+			var valid;
+			valid = validateContact();
+			if(valid) {
+				jQuery.ajax({
+					url: "contact_mail.php",
+					data:'userName='+$("#userName").val()+' '+$("#lastName").val()+'&userEmail='+$("#userEmail").val()+'&subject='+$("#subject").val()+'&content=('+$('#phone').val()+')'+$('#content').val(),
+					type: "POST",
+					success:function(data){
+						swal("You just sent your email", "We will answer you in 24 hours", "success")
+					},
+					error:function (){}
+				});
+			}
+		}
+
+		function validateContact() {
+			var valid = true;
+			$(".demoInputBox").css('background-color','');
+			$(".info").html('');
+
+			if(!$("#userName").val()) {
+				$("#userName-info").html("(required)");
+				$("#userName").css('background-color','#FFFFDF');
+				valid = false;
+			}
+			if(!$("#userEmail").val()) {
+				$("#userEmail-info").html("(required)");
+				$("#userEmail").css('background-color','#FFFFDF');
+				valid = false;
+			}
+			if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+				$("#userEmail-info").html("(invalid)");
+				$("#userEmail").css('background-color','#FFFFDF');
+				valid = false;
+			}
+			if(!$("#subject").val()) {
+				$("#subject-info").html("(required)");
+				$("#subject").css('background-color','#FFFFDF');
+				valid = false;
+			}
+			if(!$("#content").val()) {
+				$("#content-info").html("(required)");
+				$("#content").css('background-color','#FFFFDF');
+				valid = false;
+			}
+
+			return valid;
 		}
 	</script>
+
+
 </body>
 </html>

@@ -595,7 +595,7 @@ figure {
 	padding: 12px 19px;
 	color: #000;
 	outline: none;
-	border-radius: 7px;
+	border-radius: 5px;
 }
 
 .contacts .user-form input {
@@ -719,7 +719,7 @@ figure {
 	transform: translateX(-50%);
 	z-index: 2000;
 	color: #000;
-	/*border-radius: 15px;*/
+	border-radius: 5px;
 	overflow: hidden;
 }
 
