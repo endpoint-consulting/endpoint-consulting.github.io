@@ -692,7 +692,7 @@ figure {
 	transform: translate(-50%, -50%);
 }
 
-.first-name {
+/*.first-name {
 	border-top-right-radius: 40px !important;
 }
 
@@ -706,13 +706,15 @@ figure {
 
 .phone {
 	border-bottom-left-radius: 40px !important;
-}
+}*/
 
 .submit {
 	margin: 0;
 }
 
-/* MODAL WINDOW */
+/*------------------------------------*\
+	#MODAL
+\*------------------------------------*/
 
 .overlay {
 	background: rgba(0, 0, 0, .7);
@@ -925,4 +927,65 @@ figure {
 	font-size: 14px;
 	color: #888;
 	font-weight: 400;
+}
+
+/*------------------------------------*\
+	#LAPTOP VERSION
+\*------------------------------------*/
+
+@media (max-width: 1300px) {
+
+	/* SLOGAN */
+
+	.slogan h1 {
+		font-size: 50px;
+	}
+
+	.slogan .description {
+		font-size: 20px;
+	}
+
+	/* AREAS */
+
+	.areas h2 {
+		font-size: 40px;
+	}
+
+	.areas li {
+		margin: 40px 30px;
+	}
+
+	/* PROJECTS */
+
+	.projects .trust {
+		font-size: 18px;
+	}
+
+	.projects ul {
+		margin: 10px 0;
+	}
+
+	.projects li {
+		width: 180px;
+		height: 180px;
+	}
+
+	.projects-list figure a {
+		line-height: 180px;
+		font-size: 22px;
+	}
+
+	/* CONTACTS */
+
+	.contacts .hire-us {
+		font-size: 18px;
+	}
+
+	.contacts .user-form {
+		padding: 30px 69px 0;
+	}
+
+	.contacts .user-form input {
+		margin: 0 12px 10px;
+	}
 }
