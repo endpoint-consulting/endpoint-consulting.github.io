@@ -920,6 +920,52 @@ figure {
 
 @media (max-width: 1300px) {
 
+	/* MAIN MENU */
+
+	.main-header {
+		height: 56px;
+		font-size: 16px;
+	}
+
+	.main-header .header-wrapper {
+		width: 100%;
+	}
+
+	.main-header .logo {
+		top: 12px;
+	}
+
+	.main-header .logo img {
+		width: 160px !important;
+	}
+
+	.main-header .main-menu {
+		right: 30px;
+		top: 2px;
+	}
+
+	.main-header .main-menu li {
+		margin: 0 12px;
+		height: 20px;
+	}
+
+	.main-header .main-menu li:after {
+		border-bottom: 2px solid #F38371;
+		bottom: 3px;
+	}
+
+	.main-header .main-menu li a {
+		font-family: 'NeoSansStd-Regular';
+	}
+
+	.main-header .main-menu li:not(.active):hover:after {
+		border-bottom: 2px solid #F38371;
+	}
+
+	.main-header .main-menu li.active {
+		border-bottom: 2px solid #F38371;
+	}
+
 	/* SLOGAN */
 
 	.slogan h1 {
@@ -974,13 +1020,22 @@ figure {
 	.contacts .last-name,
 	.contacts .email,
 	.contacts .phone {
-		width: 322px;
+		width: 319px;
 	}
 	.contacts .user-form input {
-		margin: 0 3px 10px;
+		margin: 0 5px 16px;
+		height: 38px;
 	}
 
 	.contacts .message {
-		margin-bottom: 7px;
+		margin-bottom: 13px;
 	}
+
+	.contacts ul {
+		margin-left: 10px;
+	}
+}
+
+@media (max-width: 992px) {
+
 }
