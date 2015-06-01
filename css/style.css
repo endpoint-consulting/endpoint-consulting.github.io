@@ -345,33 +345,27 @@ figure {
 	color: #F38371;
 }
 
-.projects ul {
+.projects .projects-list {
 	padding: 30px 0 20px;
 	text-align: center;
 	margin: 40px auto;
 	position: relative;
-}
-
-.projects li {
-	display: block;
-	font-size: 0;
-	overflow: hidden;
-	width: 220px;
-	height: 220px;
-	display: inline-block;
-	margin: 0 20px;
-	cursor: pointer;
+	width: 1100px;
 }
 
 
 /*HOVER EFFECT*/
 
 .ch-item {
-	width: 100%;
-	height: 100%;
+	display: block;
+	font-size: 0;
+	overflow: hidden;
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	cursor: pointer;
 	border-radius: 50% !important;
 	position: relative;
-	cursor: default;
 	box-shadow: 
 		inset 0 0 0 0 rgba(200,95,66, 0.4);
 		
@@ -1002,11 +996,12 @@ figure {
 		font-size: 18px;
 	}
 
-	.projects ul {
-		margin: 10px 0;
+	.projects .projects-list {
+		margin: 10px auto;
+		width: 860px;
 	}
 
-	.projects li {
+	.projects .ch-item {
 		width: 180px;
 		height: 180px;
 	}

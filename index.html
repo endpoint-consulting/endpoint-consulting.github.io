@@ -58,6 +58,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body class="pageWrapper">
 
@@ -207,36 +209,53 @@
 				<div class="trust">
 					<p>Some of the biggest brands in the country trust us with their software and you should to. We've been in business for <span class="marked">20 years</span> and <span class="marked">90%</span> of our clients are repeat customers</p>
 				</div>
-				<ul class="projects-list">
-					<li class="ch-item project-1">
-						<figure class="ch-info">
-							<h3>Brainiac</h3>
-							<p>A projects for the customer</p>
-							<a href="#modal">Show</a>
-						</figure>
-					</li>
-					<li class="ch-item project-2">
-						<figure class="ch-info">
-							<h3>Brainiac</h3>
-							<p>A projects for the customer</p>
-							<a href="#modal">Show</a>
-						</figure>
-					</li>
-					<li class="ch-item project-3">
-						<figure class="ch-info">
-							<h3>Brainiac</h3>
-							<p>A projects for the customer</p>
-							<a href="#modal">Show</a>
-						</figure>
-					</li>
-					<li class="ch-item project-4">
-						<figure class="ch-info">
-							<h3>Brainiac</h3>
-							<p>A projects for the customer</p>
-							<a href="#modal">Show</a>
-						</figure>
-					</li>
-				</ul>
+				<div class="projects-list your-class">
+					<div>
+						<div class="ch-item project-1">
+							<figure class="ch-info">
+								<h3>Brainiac</h3>
+								<p>A projects for the customer</p>
+								<a href="#modal">Show</a>
+							</figure>
+						</div>
+					</div>
+					<div>
+						<div class="ch-item project-2">
+							<figure class="ch-info">
+								<h3>Brainiac</h3>
+								<p>A projects for the customer</p>
+								<a href="#modal">Show</a>
+							</figure>
+						</div>
+					</div>
+					<div>
+						<div class="ch-item project-3">
+							<figure class="ch-info">
+								<h3>Brainiac</h3>
+								<p>A projects for the customer</p>
+								<a href="#modal">Show</a>
+							</figure>
+						</div>
+					</div>
+					<div>
+						<div class="ch-item project-4">
+							<figure class="ch-info">
+								<h3>Brainiac</h3>
+								<p>A projects for the customer</p>
+								<a href="#modal">Show</a>
+							</figure>
+						</div>
+					</div>
+					<div>
+						<div class="ch-item project-5">
+							<figure class="ch-info">
+								<h3>Brainiac</h3>
+								<p>A projects for the customer</p>
+								<a href="#modal">Show</a>
+							</figure>
+						</div>
+					</div>
+				</div>
 				<div class="testimonials">
 					<div class="first-testimonial">
 						<p class="text">Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus. Quamquam te quidem video minime esse deterritum. Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici videtur.<br><span class="author-text"><span class="name"><span class="name-text">Name</span> | Desingation</span> from <span class="company">Company</span>, <span class="place">Place</span></span></p>
@@ -288,5 +307,19 @@
 	<script src="js/jquery.alton.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/sweetalert.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.your-class').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				asNavFor: '.slider-for',
+				dots: false,
+				centerMode: false,
+				focusOnSelect: true
+			});
+		});
+	</script>
 </body>
 </html>
