@@ -164,4 +164,11 @@ $(document).alton({
 		return valid;
 	}
 
+
+	// MODALS
+
+	$( ".modal-wrapper" ).load( "G2-project.html", function() {
+		alert( "Load was performed." );
+	});
+
 })();
