@@ -1,10 +1,10 @@
 $(document).alton({
-    fullSlideContainer: 'full',
-    singleSlideClass: 'slide',
-    useSlideNumbers: true,
-    slideNumbersBorderColor: '#fff',
-    slideNumbersColor: 'transparent',
-    bodyContainer: 'pageWrapper'
+	fullSlideContainer: 'full',
+	singleSlideClass: 'slide',
+	useSlideNumbers: true,
+	slideNumbersBorderColor: '#fff',
+	slideNumbersColor: 'transparent',
+	bodyContainer: 'pageWrapper'
 });
 
 (function(){
