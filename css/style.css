@@ -692,22 +692,6 @@ figure {
 	transform: translate(-50%, -50%);
 }
 
-/*.first-name {
-	border-top-right-radius: 40px !important;
-}
-
-.last-name {
-	border-bottom-left-radius: 40px !important;
-}
-
-.email {
-	border-top-right-radius: 40px !important;
-}
-
-.phone {
-	border-bottom-left-radius: 40px !important;
-}*/
-
 .submit {
 	margin: 0;
 }
@@ -739,6 +723,7 @@ figure {
 	color: #000;
 	border-radius: 5px;
 	overflow: hidden;
+	font-family: "Open Sans";
 }
 
 .modal .row {
@@ -779,7 +764,6 @@ figure {
 .modal .modal-wrapper {
 	width: 960px;
 	box-sizing: border-box;
-	font-family: "Open Sans";
 	margin: 0 auto;
 	overflow-y: scroll;
 	height: calc(100% - 100px);
@@ -801,9 +785,7 @@ figure {
 	transition: fill .2s, border-color .2s;
 	outline: none;
 	border-radius: 50%;
-	/*background: #fff;*/
 	padding: 0;
-	/*border: 2px solid #666;*/
 }
 .modal .close svg {
 	margin-top: 2px;
@@ -823,7 +805,6 @@ figure {
 	height: 50px;
 	background: #eee;
 	line-height: 44px;
-	font-family: "Open Sans";
 	padding-left: 40px;
 }
 
@@ -870,22 +851,22 @@ figure {
 	color: #444;
 	font-weight: normal;
 	font-size: 16px;
-	font-weight: 700;
-	font-family: "Open Sans";
+	font-weight: 600;
 }
 
 .modal h4 {
 	margin: 40px 0 5px;
 	color: #F38371;
 	font-size: 16px;
+	font-weight: 600;
 }
 
 .modal h5 {
 	font-size: 16px;
-	font-weight: 700;
 	margin: 0;
 	color: #444;
 	margin: 20px 0 5px;
+	font-weight: 600;
 }
 
 .modal ul {

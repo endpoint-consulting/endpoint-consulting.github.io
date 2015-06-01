@@ -53,15 +53,15 @@
 	*/
 
 	-->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="font/MyFontsWebfontsKit.css">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/sweetalert.css">
 </head>
 <body class="pageWrapper">
+
+	<!-- MODAL -->
     <div class="overlay">
 		<div class="modal">
 			<button class="close"><svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 0 48 48" width="22"><path d="M38 12.83l-2.83-2.83-11.17 11.17-11.17-11.17-2.83 2.83 11.17 11.17-11.17 11.17 2.83 2.83 11.17-11.17 11.17 11.17 2.83-2.83-11.17-11.17z"/><path d="M0 0h48v48h-48z" fill="none"/></svg></button>
@@ -142,6 +142,7 @@
 		</div>
 	</header>
 
+	<!-- FIXED HEADER -->
 	<header class="main-header fixed-header">
 		<div class="header-wrapper">
 			<div class="logo"><img src="img/logo-v2.png"></div>
@@ -156,8 +157,10 @@
 		</div>
 	</header>
 
-	<!-- SLOGAN -->
-    <section class="full">
+    <div class="full">
+
+
+		<!-- SLOGAN -->
 		<section class="slide slogan">
 			<div class="wrapper">
 				<h1>Your <span class="marked">1 touch point</span><br> for all things software</h1>
@@ -170,11 +173,9 @@
 			</video>
 		</section>
 
-		<!-- DESCRIPTION -->
-		
 
 		<!-- AREAS -->
-		<div class="slide areas">
+		<section class="slide areas">
 			<div class="wrapper">
 				<h2>Our areas of <span class="marked">expertise</span></h2>
 				<ul>
@@ -196,14 +197,12 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+		</section>
 
 		
-
 		<!-- PROJECTS -->
-		<div class="slide projects">
+		<section class="slide projects">
 			<div class="wrapper">
-			<!-- TRUST -->
 				<div class="trust">
 					<p>Some of the biggest brands in the country trust us with their software and you should to. We've been in business for <span class="marked">20 years</span> and <span class="marked">90%</span> of our clients are repeat customers</p>
 				</div>
@@ -241,16 +240,16 @@
 					<div class="first-testimonial">
 						<p class="text">Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus. Quamquam te quidem video minime esse deterritum. Sed tamen omne, quod de re bona dilucide dicitur, mihi praeclare dici videtur.<br><span class="author-text"><span class="name"><span class="name-text">Name</span> | Desingation</span> from <span class="company">Company</span>, <span class="place">Place</span></span></p>
 						<div class="author-block">
-							<div class="ava"><img src="img/testimonial-ava-left.jpg"></div>
+							<div class="ava"><img src="img/testimonial-ava.jpg"></div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 			
 			
 		<!-- CONTACTS -->
-		<div class="slide contacts">
+		<section class="slide contacts">
 			<div class="wrapper">
 				<p class="hire-us">We thrive on building great applications and exceeding our clients expectations.<br> <span class="marked">Hire us</span> and let us show you what we can do for you.</p>
 				<div class="user-form" id="frmContact">
@@ -260,80 +259,23 @@
 					<input type="text" id="phone" placeholder="Phone" class="phone">
 					<input type="text" id="subject" placeholder="Subject" class="subject">
 					<textarea type="text" id="content" placeholder="Message" class="message"></textarea>
-					<input type="submit" onClick="sendContact();" value="Submit" class="submit">
+					<input type="submit" value="Submit" class="submit">
 					<ul>
 						<li>ContactUs@EndpointConsulting.com</li>
 						<li>(954) 536-5939</li>
 					</ul>
 				</div>
 			</div>
-
 			<video autoplay loop id="bgvid">
 				<source src="video/town.m4v" type="video/mp4">
 			</video>
-		</div>
-	</section>
+		</section>
+
+	</div>
 	
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.alton.min.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/slick.min.js"></script>
 	<script src="js/sweetalert.min.js"></script>
-	<script>
-		function sendContact() {
-			var valid;
-			valid = validateContact();
-			if(valid) {
-				jQuery.ajax({
-					url: "contact_mail.php",
-					data:'userName='+$("#firstName").val()+' '+$("#lastName").val()+'&userEmail='+$("#userEmail").val()+'&subject='+$("#subject").val()+'&content=('+$('#phone').val()+')'+$('#content').val(),
-					type: "POST",
-					success:function(data){
-						swal("You just sent your email", "We will answer you in 24 hours", "success")
-					},
-					error:function (){}
-				});
-			}
-		}
-
-		function validateContact() {
-			var valid = true;
-			$("#frmContact > *").removeClass('invalid');
-			$(".info").html('');
-
-			if(!$("#firstName").val()) {
-				$("#firstName").addClass('invalid');
-				valid = false;
-			}
-			if(!$("#lastName").val()) {
-				$("#lastName").addClass('invalid');
-				valid = false;
-			}
-			if(!$("#userEmail").val()) {
-				$("#userEmail").addClass('invalid');
-				valid = false;
-			}
-			if(!$("#phone").val()) {
-				$("#phone").addClass('invalid');
-				valid = false;
-			}
-			if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-				$("#userEmail").addClass('invalid');
-				valid = false;
-			}
-			if(!$("#subject").val()) {
-				$("#subject").addClass('invalid');
-				valid = false;
-			}
-			if(!$("#content").val()) {
-				$("#content").addClass('invalid');
-				valid = false;
-			}
-
-			return valid;
-		}
-	</script>
-
-
 </body>
 </html>
