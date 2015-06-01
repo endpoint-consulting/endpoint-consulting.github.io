@@ -167,8 +167,24 @@ $(document).alton({
 
 	// MODALS
 
-	$( ".modal-wrapper" ).load( "G2-project.html", function() {
-		alert( "Load was performed." );
+	$('.project-1').on('click', function () {
+		$( ".modal-wrapper" ).load( "G2-project.html");
+	});
+	
+	$('.project-2').on('click', function () {
+		$( ".modal-wrapper" ).load( "sc-project.html");
+	});
+	
+	$('.project-3').on('click', function () {
+		$( ".modal-wrapper" ).load( "gov-project.html");
+	});
+	
+	$('.project-4').on('click', function () {
+		$( ".modal-wrapper" ).load( "partbase-project.html");
+	});
+	
+	$('.project-5').on('click', function () {
+		$( ".modal-wrapper" ).load( "sl-project.html");
 	});
 
 })();
