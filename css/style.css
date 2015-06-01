@@ -542,7 +542,6 @@ figure {
 
 .contacts {
 	overflow: hidden;
-	background: url(../img/contacts-background.jpg);
 	background-size: cover;
 	position: relative;
 	height: 100%;
@@ -580,9 +579,9 @@ figure {
 	box-sizing: border-box;
 	position: relative;
 	z-index: 2;
-	width: 816px;
 	margin: 0 auto;
 	overflow: hidden;
+	text-align: center;
 }
 
 .contacts .user-form .invalid {
@@ -633,7 +632,7 @@ figure {
 
 .contacts .message {
 	box-sizing: border-box;
-	margin: 0 12px 25px;
+	margin: 0 0 25px;
 	background: #444;
 	width: 652px;
 	border: none;
@@ -690,6 +689,11 @@ figure {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.submit-wrapper {
+	width: 676px;
+	margin: 0 auto;
 }
 
 .submit {
@@ -966,7 +970,17 @@ figure {
 		padding: 30px 69px 0;
 	}
 
+	.contacts .first-name,
+	.contacts .last-name,
+	.contacts .email,
+	.contacts .phone {
+		width: 322px;
+	}
 	.contacts .user-form input {
-		margin: 0 12px 10px;
+		margin: 0 3px 10px;
+	}
+
+	.contacts .message {
+		margin-bottom: 7px;
 	}
 }
