@@ -96,6 +96,11 @@ body {
 	font-weight: 800;
 }
 
+.areas ul {
+	padding: 0;
+	margin: 0;
+}
+
 .areas li {
 	display: block;
 }
@@ -109,4 +114,27 @@ body {
 
 .areas p {
 	margin: 0;
+}
+
+
+/* PROJECTS */
+
+.projects {
+	padding: 20px;
+	margin: 20px;
+	background: #fff;
+	color: #222;
+}
+
+.projects-list {
+	margin: 0;
+	padding: 10px 20px;
+}
+
+.projects-list li {
+	display: block;
+}
+
+.projects-list li img {
+	width: 100%;
 }
