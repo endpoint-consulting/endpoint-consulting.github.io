@@ -1,6 +1,7 @@
 body {
 	font-family: 'Open Sans', Arial, Verdana, sans-serif;
 	background: #eee;
+	padding-bottom: 30px;
 }
 
 .main-header {
@@ -16,7 +17,9 @@ body {
 	width: 200px;
 }
 
-.main-header ul {
+/* QUICK CONTACTS */
+
+.quick-contacts {
 	margin: 0;
 	padding: 5px 0;
 	text-align: left;
@@ -24,21 +27,21 @@ body {
 	text-align: center;
 }
 
-.main-header li {
+.quick-contacts li {
 	padding: 5px 10px;
 	display: inline-block;
 }
 
-.main-header li {
+.quick-contacts li {
 	vertical-align: middle;
 }
 
-.main-header li svg {
+.quick-contacts li svg {
 	vertical-align: -6px;
 	margin-right: 5px;
 }
 
-.main-header li svg g {
+.quick-contacts li svg g {
 	fill: #444 !important;
 }
 
@@ -158,4 +161,36 @@ body {
 
 .testimonials img {
 	width: 100%;
+}
+
+
+/* CONTACTS */
+
+.contacts {
+	padding: 20px;
+	margin: 20px;
+	background: #fff;
+	color: #222;
+	font-weight: 300;
+}
+
+.contacts .hire-us .marked {
+	color: #F38371;
+	font-weight: 600;
+}
+
+.contacts input,
+.contacts textarea {
+	background: #eee;
+	border: none;
+	width: 100%;
+	margin: 10px 0;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.contacts .submit {
+	background: #F38371;
+	color: #fff;
+	font-weight: 600;
 }
