@@ -19,15 +19,27 @@ body {
 .main-header ul {
 	margin: 0;
 	padding: 5px 0;
-	display: inline-block;
 	text-align: left;
 	font-weight: 300;
+	text-align: center;
 }
 
 .main-header li {
-	padding: 5px 0;
+	padding: 5px 10px;
 	display: inline-block;
-	text-align: center;
+}
+
+.main-header li {
+	vertical-align: middle;
+}
+
+.main-header li svg {
+	vertical-align: -6px;
+	margin-right: 5px;
+}
+
+.main-header li svg g {
+	fill: #444 !important;
 }
 
 /* SLOGAN */
@@ -52,7 +64,6 @@ body {
 }
 
 .slogan .description p {
-	padding: 0 20px;
 	margin: 12px 0;
 	text-align: center;
 	font-weight: 300;
@@ -61,4 +72,41 @@ body {
 .slogan .description .marked {
 	color: #F38371;
 	font-weight: 600;
+}
+
+
+/* AREAS */
+
+.areas {
+	padding: 20px;
+	margin: 20px;
+	background: #fff;
+	color: #222;
+}
+
+.areas h2 {
+	margin: 10px 0 0;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 300;
+}
+
+.areas h2 .marked {
+	color: #F38371;
+	font-weight: 800;
+}
+
+.areas li {
+	display: block;
+}
+
+.areas h3 {
+	font-size: 18px;
+	margin: 25px 0 5px;
+	font-weight: 600;
+	color: #F38371;
+}
+
+.areas p {
+	margin: 0;
 }
