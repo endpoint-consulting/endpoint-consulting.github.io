@@ -353,6 +353,33 @@ figure {
 	width: 1100px;
 }
 
+.slick-prev, .slick-next {
+	background: none;
+	top: 0 !important;
+	bottom: 0 !important;
+	height: auto !important;
+	width: 100px !important;
+	opacity: .75 !important;
+	-webkit-transition: opacity .2s;
+	transition: opacity .2s;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+	color: #888 !important;
+	opacity: 1 !important;
+}
+
+.slick-prev {
+	text-align: right;
+	left: -100px !important;
+}
+
+.slick-next {
+	text-align: left;
+	right: -100px !important;
+}
+
 
 /*HOVER EFFECT*/
 
