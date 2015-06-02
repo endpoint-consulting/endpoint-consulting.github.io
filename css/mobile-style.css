@@ -1,9 +1,64 @@
+body {
+	font-family: 'Open Sans', Arial, Verdana, sans-serif;
+	background: #eee;
+}
+
 .main-header {
-	background: rgba(0, 0, 0, .8);
 	text-align: center;
+}
+
+.main-header .logo {
+	background: rgba(0, 0, 0, .8);
 	padding: 10px 0;
 }
 
 .main-header img {
 	width: 200px;
+}
+
+.main-header ul {
+	margin: 0;
+	padding: 5px 0;
+	display: inline-block;
+	text-align: left;
+	font-weight: 300;
+}
+
+.main-header li {
+	padding: 5px 0;
+	display: inline-block;
+	text-align: center;
+}
+
+/* SLOGAN */
+
+.slogan {
+	padding: 20px;
+	margin: 20px;
+	background: #fff;
+	color: #222;
+}
+
+.slogan h1 {
+	margin: 10px 0 0;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 300;
+}
+
+.slogan h1 .marked {
+	color: #F38371;
+	font-weight: 800;
+}
+
+.slogan .description p {
+	padding: 0 20px;
+	margin: 12px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+.slogan .description .marked {
+	color: #F38371;
+	font-weight: 600;
 }
