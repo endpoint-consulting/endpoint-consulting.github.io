@@ -1,0 +1,9 @@
+.main-header {
+	background: rgba(0, 0, 0, .8);
+	text-align: center;
+	padding: 10px 0;
+}
+
+.main-header img {
+	width: 200px;
+}
