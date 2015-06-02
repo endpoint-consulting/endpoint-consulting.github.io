@@ -731,6 +731,7 @@ figure {
 	border-radius: 5px;
 	overflow: hidden;
 	font-family: "Open Sans";
+	display: none;
 }
 
 .modal .row {

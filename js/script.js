@@ -80,14 +80,6 @@ $(document).alton({
 		}
 	}
 
-	// MODAL
-	$('.projects-list a').on('click', function () {
-		$('.overlay').show();
-	});
-
-	$('.modal .close').on('click', function () {
-		$('.overlay').hide();
-	});
 
 	// ADAPTIVE VIDEO
 
@@ -166,6 +158,20 @@ $(document).alton({
 
 
 	// MODALS
+
+	$('.projects-list a').on('click', function () {
+		$('.overlay').fadeIn(400);
+		$('.modal ').fadeIn(400);
+		$('.modal').removeClass('zoomOut');
+		$('.modal').addClass('zoomIn').addClass('animated');
+	});
+
+	$('.modal .close').on('click', function () {
+		$('.overlay').fadeOut(400);
+		$('.modal ').fadeOut(400);
+		$('.modal').removeClass('zoomIn');
+		$('.modal').addClass('zoomOut').addClass('animated');
+	});
 
 	$('.project-1').on('click', function () {
 		$( ".modal-wrapper" ).load( "G2-project.html");
