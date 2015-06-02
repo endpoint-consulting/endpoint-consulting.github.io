@@ -56,6 +56,7 @@ body {
 	font-size: 30px;
 	text-align: center;
 	font-weight: 300;
+	line-height: 1;
 }
 
 .slogan h1 .marked {
@@ -89,6 +90,7 @@ body {
 	font-size: 30px;
 	text-align: center;
 	font-weight: 300;
+	line-height: 1;
 }
 
 .areas h2 .marked {
@@ -114,6 +116,7 @@ body {
 
 .areas p {
 	margin: 0;
+	font-weight: 300;
 }
 
 
@@ -124,6 +127,12 @@ body {
 	margin: 20px;
 	background: #fff;
 	color: #222;
+	font-weight: 300;
+}
+
+.projects .marked {
+	color: #F38371;
+	font-weight: 600;
 }
 
 .projects-list {
@@ -136,5 +145,17 @@ body {
 }
 
 .projects-list li img {
+	width: 100%;
+}
+
+.testimonials {
+	padding: 20px;
+	margin: 20px;
+	background: #fff;
+	color: #222;
+	font-weight: 300;
+}
+
+.testimonials img {
 	width: 100%;
 }
