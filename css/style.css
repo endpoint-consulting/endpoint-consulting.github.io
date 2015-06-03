@@ -758,6 +758,7 @@ figure {
 	#MODAL
 \*------------------------------------*/
 
+
 .overlay {
 	background: rgba(0, 0, 0, .7);
 	position: fixed;
@@ -770,7 +771,6 @@ figure {
 }
 
 .modal {
-	background: #fff;
 	position: fixed;
 	top: 80px;
 	bottom: 80px;
@@ -778,11 +778,28 @@ figure {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 2000;
+	font-family: "Open Sans";
+	display: none;
+}
+
+.modal-content {
 	color: #000;
 	border-radius: 5px;
 	overflow: hidden;
-	font-family: "Open Sans";
-	display: none;
+	height: 100%;
+	background: #fff;
+	position: relative;
+}
+
+.modal-carousel {
+	width: 960px;
+	height: 100%;
+	margin: 0 !important;
+}
+
+.modal .slick-track, .modal .slick-list {
+	height: 100%;
+	width: 960px;
 }
 
 .modal .row {
@@ -845,6 +862,7 @@ figure {
 	outline: none;
 	border-radius: 50%;
 	padding: 0;
+	z-index: 1;
 }
 .modal .close svg {
 	margin-top: 2px;
@@ -858,6 +876,7 @@ figure {
 .modal header {
 	background: #eee;
 	height: 50px;
+	position: relative;
 }
 
 .modal footer {

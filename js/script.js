@@ -164,6 +164,15 @@ $(document).alton({
 		$('.modal ').fadeIn(400);
 		$('.modal').removeClass('zoomOut');
 		$('.modal').addClass('zoomIn').addClass('animated');
+		
+		$('.modal-carousel').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			asNavFor: '.slider-for',
+			dots: false,
+			centerMode: false,
+			focusOnSelect: true
+		});
 	});
 
 	$('.modal .close').on('click', function () {
