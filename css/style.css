@@ -506,6 +506,10 @@ figure {
 .testimonials {
 	overflow: hidden;
 	font-family: 'Open Sans';
+	padding: 0 30px;
+	width: 1100px;
+	box-sizing: border-box;
+	margin: 0 auto;
 }
 
 .testimonials .text {
@@ -517,6 +521,7 @@ figure {
 	font-size: 14px;
 	float: left;
 	color: #ddd;
+	font-weight: 300;
 }
 
 .testimonials .author-block {
@@ -535,9 +540,8 @@ figure {
 }
 
 .testimonials .author-text {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 14px;
-	color: #aaa;
 }
 
 /*------------------------------------*\
@@ -545,25 +549,45 @@ figure {
 \*------------------------------------*/
 
 .testimonials .first-testimonial {
-	padding: 0 85px 0 90px;
+	padding: 0 10px 0 60px;
 	box-sizing: border-box;
 	overflow: hidden;
-}
-
-.testimonials .first-testimonial .text {
-	padding-left: 250px;
-	width: 800px;
+	width: 50%;
+	position: relative;
 	float: left;
 }
 
-.testimonials .first-testimonial .ava {
-	margin-left: -3px;
-	float: right;
+.testimonials .first-testimonial .text {
+	text-align: left;
 }
 
-.testimonials .first-testimonial .author-block {
+.testimonials .first-testimonial .ava {
 	position: absolute;
-	width: 236px;
+	left: 0;
+	top: 0;
+}
+
+/*------------------------------------*\
+	#second testimonials
+\*------------------------------------*/
+
+.testimonials .second-testimonial {
+	padding: 0 60px 0 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 50%;
+	position: relative;
+	float: left;
+}
+
+.testimonials .second-testimonial .text {
+	text-align: right;
+}
+
+.testimonials .second-testimonial .ava {
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 /*------------------------------------*\
@@ -1037,6 +1061,40 @@ figure {
 	.projects-list figure a {
 		line-height: 180px;
 		font-size: 22px;
+	}
+
+	/* testemonials */
+
+	.testimonials {
+		overflow: hidden;
+		font-family: 'Open Sans';
+		padding: 0 30px;
+		width: 880px;
+		box-sizing: border-box;
+		margin: 0 auto;
+	}
+
+	.testimonials .first-testimonial {
+		padding: 0 0 0 60px;
+		box-sizing: border-box;
+		overflow: hidden;
+		width: 50%;
+		position: relative;
+		float: left;
+	}
+
+	.testimonials .second-testimonial {
+		padding: 0 60px 0 0;
+		box-sizing: border-box;
+		overflow: hidden;
+		width: 50%;
+		position: relative;
+		float: left;
+	}
+
+	.testimonials .text,
+	.testimonials .author-text {
+		font-size: 13px !important;
 	}
 
 	/* CONTACTS */
