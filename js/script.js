@@ -159,20 +159,25 @@ $(document).alton({
 
 	// MODALS
 
+	var modalSlider = false;
+
 	$('.projects-list a').on('click', function () {
 		$('.overlay').fadeIn(400);
 		$('.modal ').fadeIn(400);
 		$('.modal').removeClass('zoomOut');
 		$('.modal').addClass('zoomIn').addClass('animated');
-		
-		$('.modal-carousel').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			asNavFor: '.slider-for',
-			dots: false,
-			centerMode: false,
-			focusOnSelect: true
-		});
+
+		if (!modalSlider) {
+			modalSlider = true;
+			$('.modal-carousel').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				asNavFor: '.slider-for',
+				dots: false,
+				centerMode: false,
+				focusOnSelect: true
+			});
+		}
 	});
 
 	$('.modal .close').on('click', function () {
@@ -182,34 +187,34 @@ $(document).alton({
 		$('.modal').addClass('zoomOut').addClass('animated');
 	});
 
-	$('.project-1').on('click', function () {
-		$('.modal-wrapper').load('G2-project.html');
-		$('.modal header h3').text('IT and Database Consulting for Marketing G2: A decade long technical partnership');
-		$('.modal footer a').attr('href', 'pdf/Case Study_MarketingG2_v1.pdf');
-	});
+	// $('.project-1').on('click', function () {
+	// 	$('.modal-wrapper').load('G2-project.html');
+	// 	$('.modal header h3').text('IT and Database Consulting for Marketing G2: A decade long technical partnership');
+	// 	$('.modal footer a').attr('href', 'pdf/Case Study_MarketingG2_v1.pdf');
+	// });
 	
-	$('.project-2').on('click', function () {
-		$('.modal-wrapper').load('sc-project.html');
-		$('.modal header h3').text('IT and Database Consulting for SolarCity : America’s #1 source for solar power');
-		$('.modal footer a').attr('href', 'pdf/Case Study_SolarCity_v1.pdf');
-	});
+	// $('.project-2').on('click', function () {
+	// 	$('.modal-wrapper').load('sc-project.html');
+	// 	$('.modal header h3').text('IT and Database Consulting for SolarCity : America’s #1 source for solar power');
+	// 	$('.modal footer a').attr('href', 'pdf/Case Study_SolarCity_v1.pdf');
+	// });
 	
-	$('.project-3').on('click', function () {
-		$('.modal-wrapper').load('gov-project.html');
-		$('.modal header h3').text('IT and Database Consulting Services for GOVGISTICS : Managing 5K New Gov.’t Contracts Daily');
-		$('.modal footer a').attr('href', 'pdf/Case Study_Govgistics_v1.pdf');
-	});
+	// $('.project-3').on('click', function () {
+	// 	$('.modal-wrapper').load('gov-project.html');
+	// 	$('.modal header h3').text('IT and Database Consulting Services for GOVGISTICS : Managing 5K New Gov.’t Contracts Daily');
+	// 	$('.modal footer a').attr('href', 'pdf/Case Study_Govgistics_v1.pdf');
+	// });
 	
-	$('.project-4').on('click', function () {
-		$('.modal-wrapper').load('partbase-project.html');
-		$('.modal header h3').text('IT and Database Consulting Services for PartsBase.com');
-		$('.modal footer a').attr('href', 'pdf/Case Study_PartsBase_v1.pdf');
-	});
+	// $('.project-4').on('click', function () {
+	// 	$('.modal-wrapper').load('partbase-project.html');
+	// 	$('.modal header h3').text('IT and Database Consulting Services for PartsBase.com');
+	// 	$('.modal footer a').attr('href', 'pdf/Case Study_PartsBase_v1.pdf');
+	// });
 	
-	$('.project-5').on('click', function () {
-		$('.modal-wrapper').load('sl-project.html');
-		$('.modal header h3').text('Complete Product Development for SeekingLeads.com : From Napkin to Launch in 5 month');
-		$('.modal footer a').attr('href', 'pdf/Case Study_SeekingLeads_v1.pdf');
-	});
+	// $('.project-5').on('click', function () {
+	// 	$('.modal-wrapper').load('sl-project.html');
+	// 	$('.modal header h3').text('Complete Product Development for SeekingLeads.com : From Napkin to Launch in 5 month');
+	// 	$('.modal footer a').attr('href', 'pdf/Case Study_SeekingLeads_v1.pdf');
+	// });
 
 })();

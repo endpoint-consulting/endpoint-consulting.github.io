@@ -359,7 +359,7 @@ figure {
 	bottom: 0 !important;
 	height: auto !important;
 	width: 100px !important;
-	opacity: .75 !important;
+	opacity: .70 !important;
 	-webkit-transition: opacity .2s;
 	transition: opacity .2s;
 }
@@ -367,7 +367,7 @@ figure {
 .slick-prev:hover,
 .slick-next:hover {
 	color: #888 !important;
-	opacity: 1 !important;
+	opacity: .9 !important;
 }
 
 .slick-prev {
@@ -782,6 +782,20 @@ figure {
 	display: none;
 }
 
+.modal .slick-next {
+	position: fixed;
+	padding-left: 50px;
+	width: 1000px !important;
+	right: -1000px !important;
+}
+
+.modal .slick-prev {
+	position: fixed;
+	padding-right: 50px;
+	width: 1000px !important;
+	left: -1000px !important;
+}
+
 .modal-content {
 	color: #000;
 	border-radius: 5px;
@@ -800,6 +814,33 @@ figure {
 .modal .slick-track, .modal .slick-list {
 	height: 100%;
 	width: 960px;
+}
+
+.slick-prev:before {
+	content: "" !important;
+	display: block;
+	float: right;
+	width: 20px;
+	height: 20px;
+	/*background: red;*/
+	transform: rotate(45deg);
+	border-bottom: 3px solid #fff;
+	border-left: 3px solid #fff;
+	margin-top: 20px;
+}
+
+.slick-next:before {
+	content: "" !important;
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	/*background: red;*/
+	transform: rotate(45deg);
+	border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+	margin-top: 20px;
+	margin-left: -2px;
 }
 
 .modal .row {
