@@ -144,16 +144,24 @@ body {
 }
 
 .projects-list {
-	margin: 0;
-	padding: 10px 20px;
+	margin: 10px 20px;
+	background: #fff;
+	overflow: hidden;
 }
 
-.projects-list li {
-	display: block;
-}
-
-.projects-list li img {
+.projects-list img {
 	width: 100%;
+}
+
+.projects-list a {
+	display: block;
+	background: #F38371;
+	color: #fff;
+	font-weight: 600;
+	margin: 20px;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
 }
 
 .testimonials {
