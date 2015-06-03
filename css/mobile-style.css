@@ -4,6 +4,11 @@ body {
 	padding-bottom: 30px;
 }
 
+.full {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
 .main-header {
 	text-align: center;
 }
@@ -161,6 +166,7 @@ body {
 
 .testimonials img {
 	width: 100%;
+	max-width: 300px;
 }
 
 
