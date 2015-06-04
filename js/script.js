@@ -121,7 +121,7 @@ $(document).alton({
 
 	function validateContact() {
 		var valid = true;
-		$("#frmContact > *").removeClass('invalid');
+		$("#frmContact input, #frmContact textarea").removeClass('invalid');
 		$(".info").html('');
 
 		if(!$("#firstName").val()) {
@@ -136,20 +136,8 @@ $(document).alton({
 			$("#userEmail").addClass('invalid');
 			valid = false;
 		}
-		if(!$("#phone").val()) {
-			$("#phone").addClass('invalid');
-			valid = false;
-		}
 		if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
 			$("#userEmail").addClass('invalid');
-			valid = false;
-		}
-		if(!$("#subject").val()) {
-			$("#subject").addClass('invalid');
-			valid = false;
-		}
-		if(!$("#content").val()) {
-			$("#content").addClass('invalid');
 			valid = false;
 		}
 

@@ -203,6 +203,11 @@ body {
 	box-sizing: border-box;
 }
 
+.contacts input.invalid,
+.contacts textarea.invalid {
+	outline: 2px solid #DC5B5F;
+}
+
 .contacts .submit {
 	background: #F38371;
 	color: #fff;
