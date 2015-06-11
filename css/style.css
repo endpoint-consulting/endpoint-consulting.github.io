@@ -244,6 +244,7 @@ figure {
 	top: 50%;
 	margin-top: 0;
 	transform: translateY(-50%);
+	margin-top: 10px;
 }
 
 .areas li {
@@ -1099,7 +1100,7 @@ figure {
 	}
 
 	.areas li {
-		margin: 40px 30px;
+		margin: 30px 30px;
 	}
 
 	/* PROJECTS */
