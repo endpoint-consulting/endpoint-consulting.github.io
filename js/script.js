@@ -174,6 +174,11 @@ $(document).alton({
 		$('.modal').addClass('fadeOutUp').addClass('animated');
 	});
 
+	$('.projects-list .ch-item').on('click', function () {
+		$('.modal-carousel').slick('slickGoTo', $(this).attr('class')[$(this).attr('class').length-1]-1);
+		console.log($(this).attr('class')[$(this).attr('class').length-1]);
+	});
+
 	// $('.project-1').on('click', function () {
 	// 	$('.modal-wrapper').load('G2-project.html');
 	// 	$('.modal header h3').text('IT and Database Consulting for Marketing G2: A decade long technical partnership');
