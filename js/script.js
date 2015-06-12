@@ -152,8 +152,8 @@ $(document).alton({
 	$('.projects-list a').on('click', function () {
 		$('.overlay').fadeIn(400);
 		$('.modal ').fadeIn(400);
-		$('.modal').removeClass('zoomOut');
-		$('.modal').addClass('zoomIn').addClass('animated');
+		$('.modal').removeClass('fadeOutUp');
+		$('.modal').addClass('fadeInDown').addClass('animated');
 
 		if (!modalSlider) {
 			modalSlider = true;
@@ -162,8 +162,7 @@ $(document).alton({
 				slidesToScroll: 1,
 				asNavFor: '.slider-for',
 				dots: false,
-				centerMode: false,
-				focusOnSelect: true
+				centerMode: false
 			});
 		}
 	});
@@ -171,8 +170,8 @@ $(document).alton({
 	$('.modal .close').on('click', function () {
 		$('.overlay').fadeOut(400);
 		$('.modal ').fadeOut(400);
-		$('.modal').removeClass('zoomIn');
-		$('.modal').addClass('zoomOut').addClass('animated');
+		$('.modal').removeClass('fadeInDown');
+		$('.modal').addClass('fadeOutUp').addClass('animated');
 	});
 
 	// $('.project-1').on('click', function () {

@@ -507,7 +507,6 @@ figure {
 .testimonials {
 	overflow: hidden;
 	font-family: 'Open Sans';
-	padding: 0 30px;
 	width: 1100px;
 	box-sizing: border-box;
 	margin: 0 auto;
@@ -515,7 +514,6 @@ figure {
 
 .testimonials .text {
 	box-sizing: border-box;
-	padding: 0 18px;
 	border-radius: 5px;
 	margin: 0;
 	position: relative;
@@ -527,6 +525,11 @@ figure {
 
 .testimonials .author-block {
 	width: 236px;
+}
+
+.testimonials .name-text {
+	color: #F38371;
+	font-weight: 600;
 }
 
 .testimonials .ava {
@@ -550,12 +553,12 @@ figure {
 \*------------------------------------*/
 
 .testimonials .first-testimonial {
-	padding: 0 10px 0 60px;
 	box-sizing: border-box;
 	overflow: hidden;
 	width: 50%;
 	position: relative;
 	float: left;
+	padding: 0 18px 0 0;
 }
 
 .testimonials .first-testimonial .text {
@@ -573,7 +576,6 @@ figure {
 \*------------------------------------*/
 
 .testimonials .second-testimonial {
-	padding: 0 60px 0 10px;
 	box-sizing: border-box;
 	overflow: hidden;
 	width: 50%;
@@ -583,6 +585,7 @@ figure {
 
 .testimonials .second-testimonial .text {
 	text-align: right;
+	padding: 0 0 0 18px;
 }
 
 .testimonials .second-testimonial .ava {
@@ -777,10 +780,12 @@ figure {
 	bottom: 80px;
 	margin: 0 auto;
 	left: 50%;
-	transform: translateX(-50%);
+	/*transform: translateX(-50%);*/
 	z-index: 2000;
 	font-family: "Open Sans";
 	display: none;
+	width: 960px;
+	left: 480px;
 }
 
 .modal .slick-next {
@@ -1129,23 +1134,20 @@ figure {
 	.testimonials {
 		overflow: hidden;
 		font-family: 'Open Sans';
-		padding: 0 30px;
 		width: 880px;
 		box-sizing: border-box;
 		margin: 0 auto;
 	}
 
 	.testimonials .first-testimonial {
-		padding: 0 0 0 60px;
-		box-sizing: border-box;
-		overflow: hidden;
+		box-sizing: border-box
+;		overflow: hidden;
 		width: 50%;
 		position: relative;
 		float: left;
 	}
 
 	.testimonials .second-testimonial {
-		padding: 0 60px 0 0;
 		box-sizing: border-box;
 		overflow: hidden;
 		width: 50%;
