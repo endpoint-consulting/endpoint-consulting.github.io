@@ -998,14 +998,13 @@ figure {
 	margin: 0;
 }
 
-.modal .newspapers-brands img {
+.modal img {
 	width: 100%;
 	margin: 40px 0;
 }
 
 .modal .technologies h4 {
 	text-align: center;
-	margin: 0;
 }
 
 .modal .technologies ul {
