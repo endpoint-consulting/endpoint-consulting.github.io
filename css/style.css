@@ -749,13 +749,18 @@ figure {
 	transform: translate(-50%, -50%);
 }
 
-.submit-wrapper {
+.contacts .submit-wrapper {
 	width: 676px;
 	margin: 0 auto;
 }
 
-.submit {
+.contacts .submit {
 	margin: 0;
+}
+
+.contacts a {
+	/*color: #F38371;*/
+	color: #ddd;
 }
 
 /*------------------------------------*\
@@ -858,9 +863,9 @@ figure {
 
 .modal .slick-prev:after,
 .modal .slick-next:after {
-	background: rgba(88, 88, 88, .9);
+	background: #111;
 	content: "";
-	width: 180px;
+	width: 140px;
 	display: block;
 	position: absolute;
 	z-index: -1;
@@ -875,6 +880,11 @@ figure {
 
 .modal .slick-next:after {
 	left: -3px;
+}
+
+.modal .slick-prev,
+.modal .slick-next {
+	opacity: 1 !important;
 }
 
 .modal .row {
