@@ -764,7 +764,7 @@ figure {
 
 
 .overlay {
-	background: rgba(0, 0, 0, .7);
+	background: rgba(0, 0, 0, .8);
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -822,13 +822,16 @@ figure {
 	width: 960px;
 }
 
+.modal .slick-list {
+	z-index: 100;
+}
+
 .slick-prev:before {
 	content: "" !important;
 	display: block;
 	float: right;
 	width: 20px;
 	height: 20px;
-	/*background: red;*/
 	transform: rotate(45deg);
 	border-bottom: 3px solid #fff;
 	border-left: 3px solid #fff;
@@ -841,12 +844,37 @@ figure {
 	float: left;
 	width: 20px;
 	height: 20px;
-	/*background: red;*/
 	transform: rotate(45deg);
 	border-top: 3px solid #fff;
 	border-right: 3px solid #fff;
 	margin-top: 20px;
 	margin-left: -2px;
+}
+
+.modal .slick-prev:before,
+.modal .slick-next:before {
+	/*border-color: rgba(0, 0, 0, .8) !important;*/
+}
+
+.modal .slick-prev:after,
+.modal .slick-next:after {
+	background: rgba(88, 88, 88, .9);
+	content: "";
+	width: 180px;
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 42px;
+	margin-top: -32px;
+	bottom: 0;
+}
+
+.modal .slick-prev:after {
+	right: -3px;
+}
+
+.modal .slick-next:after {
+	left: -3px;
 }
 
 .modal .row {
