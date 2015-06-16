@@ -1,5 +1,5 @@
 <?php
-$toEmail = "hack4tourism@yandex.ru";
+$toEmail = "ContactUs@EndpointConsulting.com";
 $mailHeaders = "From: " . $_POST["userName"] . "<". $_POST["userEmail"] .">\r\n";
 if(mail($toEmail, $_POST["subject"], $_POST["content"], $mailHeaders)) {
 print_r("<p class='success'>Contact Mail Sent.</p>");
