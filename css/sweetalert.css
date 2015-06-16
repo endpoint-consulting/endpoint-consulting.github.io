@@ -1,6 +1,4 @@
-body.stop-scrolling {
-  height: 100%;
-  overflow: hidden; }
+body.stop-scrolling { }
 
 .sweet-overlay {
   background-color: black;
