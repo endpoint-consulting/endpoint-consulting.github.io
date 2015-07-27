@@ -790,7 +790,8 @@ figure {
 	font-family: "Open Sans";
 	display: none;
 	width: 960px;
-	left: 480px;
+	left: 50%;
+	margin-left: -480px;
 }
 
 .modal .slick-next {
